@@ -1,8 +1,12 @@
-$main--color: #f2443e;
+$main--color: #55a94f;
 $secondary--color: #7fd0ff;
 
 .main--text {
     color: $main--color;
+}
+
+.main--bgcolor {
+    background-color: $main--color;
 }
 
 .secondary--text {

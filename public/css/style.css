@@ -638,7 +638,7 @@ section { padding: 80px 0; position: relative; z-index: 1;}
 .highlight-button-blue i { color: #fff}
 .highlight-button-blue:hover i {color:#2283d4}
 
-.highlight-button-blue-dark { border:2px solid #2283d4; display: inline-block; padding: 8px 20px 9px; font-size: 12px; color:#fff; background-color: #2283d4;  }
+.highlight-button-blue-dark { border:2px solid #55a94f; display: inline-block; padding: 8px 20px 9px; font-size: 12px; color:#fff; background-color: #2283d4;  }
 .highlight-button-blue-dark:hover, .highlight-button-blue-dark:focus { background-color: transparent; border: 2px solid #000; color:#000}
 .highlight-button-blue-dark i { color: #fff}
 .highlight-button-blue-dark:hover i {color:#2283d4}
@@ -1102,7 +1102,7 @@ ul.portfolio-filter-tab-style-6 { margin: 220px 50px 0 0;}
 .tab-style-3 li:first-child a {padding-left: 0 }
 .tab-style-3 li a { border: 0 !important; color: #9b9b9b; padding: 5px 0}
 .tab-style-3 li a:hover {background: transparent}
-.tab-style-3 li a:hover, .tab-style-3 li.active a {border-bottom: 2px solid #e31d3b !important }
+.tab-style-3 li a:hover, .tab-style-3 li.active a {border-bottom: 2px solid #55a94f !important }
 
 /* tab - style 4 */
 .tab-style-4 ul {border: 1px solid rgba(0,0,0,.1)}
