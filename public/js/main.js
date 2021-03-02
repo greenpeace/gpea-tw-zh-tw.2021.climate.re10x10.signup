@@ -439,48 +439,48 @@ $(document).ready(function () {
 
     //architecture contact form
 
-    $("#architecture-contact-button").click(function () {
-        var error = ValidationArchitectureContactForm();
-        if (error) {
-            $.ajax({
-                type: "POST",
-                url: "email-templates/architecture-contact.php",
-                data: $("#architecturecontactform").serialize(),
-                success: function (result) {
-                    $('input[type=text],textarea').each(function () {
-                        $(this).val('');
-                    })
-                    $("#success").html(result);
-                    $("#success").fadeIn("slow");
-                    $('#success').delay(4000).fadeOut("slow");
-                }
-            });
-        }
-    });
-    function ValidationArchitectureContactForm() {
-        var error = true;
-        $('#architecturecontactform input[type=text]').each(function (index) {
-            if (index == 0) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
-                }
-                else {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
-                }
-            }
-            else if (index == 1) {
-                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
-                } else {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
-                }
-            }
+    // $("#architecture-contact-button").click(function () {
+    //     var error = ValidationArchitectureContactForm();
+    //     if (error) {
+    //         $.ajax({
+    //             type: "POST",
+    //             url: "email-templates/architecture-contact.php",
+    //             data: $("#architecturecontactform").serialize(),
+    //             success: function (result) {
+    //                 $('input[type=text],textarea').each(function () {
+    //                     $(this).val('');
+    //                 })
+    //                 $("#success").html(result);
+    //                 $("#success").fadeIn("slow");
+    //                 $('#success').delay(4000).fadeOut("slow");
+    //             }
+    //         });
+    //     }
+    // });
+    // function ValidationArchitectureContactForm() {
+    //     var error = true;
+    //     $('#architecturecontactform input[type=text]').each(function (index) {
+    //         if (index == 0) {
+    //             if ($(this).val() == null || $(this).val() == "") {
+    //                 $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
+    //                 error = false;
+    //             }
+    //             else {
+    //                 $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
+    //             }
+    //         }
+    //         else if (index == 1) {
+    //             if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
+    //                 $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
+    //                 error = false;
+    //             } else {
+    //                 $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
+    //             }
+    //         }
 
-        });
-        return error;
-    }
+    //     });
+    //     return error;
+    // }
 
     //wedding contact form
 

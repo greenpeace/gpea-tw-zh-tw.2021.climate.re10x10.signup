@@ -4,30 +4,30 @@ const ProgressBar = require('progressbar.js')
 const {$, dataLayer, currency} = window
 const Mailcheck = require('mailcheck');
 
-let footer_main_page_url = `https://www.greenpeace.org/taiwan/?ref=2021-plastic_policy_petition`
-let footer_donate_url = `https://supporter.ea.greenpeace.org/tw/s/donate?campaign=plastics&ref=2021-plastic_policy_petition-footer`
-let footer_privacy_url = `https://www.greenpeace.org/taiwan/policies/privacy-and-cookies/?ref=2021-plastic_policy_petition`
+// let footer_main_page_url = `https://www.greenpeace.org/taiwan/?ref=2021-plastic_policy_petition`
+// let footer_donate_url = `https://supporter.ea.greenpeace.org/tw/s/donate?campaign=plastics&ref=2021-plastic_policy_petition-footer`
+// let footer_privacy_url = `https://www.greenpeace.org/taiwan/policies/privacy-and-cookies/?ref=2021-plastic_policy_petition`
 
-window.directTo = function (type) {
-    switch (type){
-        case 'main':
-            window.open(footer_main_page_url, '_blank');
-            break
-        case 'donate':
-            window.open(footer_donate_url, '_blank');
-            break
-        case 'privacy':
-            window.open(footer_privacy_url, '_blank');
-            break
-        default: 
-        window.open(footer_privacy_url, '_blank');
-    }
-}
+// window.directTo = function (type) {
+//     switch (type){
+//         case 'main':
+//             window.open(footer_main_page_url, '_blank');
+//             break
+//         case 'donate':
+//             window.open(footer_donate_url, '_blank');
+//             break
+//         case 'privacy':
+//             window.open(footer_privacy_url, '_blank');
+//             break
+//         default: 
+//         window.open(footer_privacy_url, '_blank');
+//     }
+// }
 
 $(document).ready(function() {
     console.log( "ready!" );
     // initProgressBar();
-    createYearOptions();
+    // createYearOptions();
     initForm();
     checkEmail();
     init();
@@ -53,18 +53,18 @@ function checkEmail() {
 	];
 	let topLevelDomains = ["com", "net", "org"];
 
-	$("#fake_supporter_emailAddress").on('blur', function() {
-        console.log($("#fake_supporter_emailAddress").val())
+	$("#email").on('blur', function() {
+        console.log($("#email").val())
 		Mailcheck.run({
-			email: $("#fake_supporter_emailAddress").val(),
+			email: $("#email").val(),
 			domains: domains, // optional
 			topLevelDomains: topLevelDomains, // optional
 			suggested: (suggestion) => {      
                 $('.email-suggestion').remove();
-                $(`<div class="email-suggestion">您想輸入的是 <strong id="emailSuggestion">${suggestion.full}</strong> 嗎？</div>`).insertAfter("#fake_supporter_emailAddress");
+                $(`<div class="email-suggestion">您想輸入的是 <strong id="emailSuggestion">${suggestion.full}</strong> 嗎？</div>`).insertAfter("#email");
                 
                 $(".email-suggestion").click(function() {
-                    $("#fake_supporter_emailAddress").val($('#emailSuggestion').html());
+                    $("#email").val($('#emailSuggestion').html());
                     $('.email-suggestion').remove();
                 });
 			},
@@ -73,51 +73,6 @@ function checkEmail() {
 			}
 		});
 	});
-}
-
-async function initProgressBar() {
-
-    let count = parseInt($('#mc-form [name="numResponses"]').val());
-    console.log(count);
-
-    const goal = Math.ceil(count / 5000) * 5000
-    console.log(goal);
-    $('#petition-goal').html(currency(goal, { precision: 0, separator: ',' }).format());
-    $('#petition-count').html(currency(count, { precision: 0, separator: ',' }).format());
-
-    // try {
-    //     let response = await fetch('https://act.greenpeace.org/page/widget/713556');
-    //     let res = await response.json();
-    //     count = res.data.rows.map((item) => {return parseInt(item.columns[4].value)}).reduce((a, b) => {return a + b}, 0);
-    //     $('#petition-count').html(currency(count, { precision: 0, separator: ',' }).format());
-
-    // } catch (err) {
-    //     console.log(err);
-    // }
-    let percent = count / goal;
-
-    let bar = new ProgressBar.Line('#progress-bar', {
-        strokeWidth: 3,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#FFEA82',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: {width: '100%', height: '100%'}
-    });
-    // console.log(percent)
-    bar.animate(percent);
-}
-
-function createYearOptions() {
-    let currYear = new Date().getFullYear()
-    $("#fake_supporter_birthYear").append(`<option value="">出生年份</option>`);
-    for (var i = 0; i < 80; i++) {
-        let option = `<option value="01/01/${currYear-i}">${currYear-i}</option>`
-
-        $("#fake_supporter_birthYear").append(option);
-        $('#en__field_supporter_NOT_TAGGED_6').append(option);
-    }
 }
 
 const resolveEnPagePetitionStatus = () => {
@@ -135,77 +90,41 @@ const resolveEnPagePetitionStatus = () => {
 const initForm = () => {
     console.log('init form')
 
-    $('#center_sign-submit').click(function(e){
-        e.preventDefault();
-        $("#fake-form").submit();
-        console.log("fake-form submitting")
-    }).end()
+    $("#architecture-contact-button").click(function () {
+        var error = ValidationArchitectureContactForm();
+        console.log(error)
+        if (error) {
 
-    $.validator.addMethod( //override email with django email validator regex - fringe cases: "user@admin.state.in..us" or "name@website.a"
-        'email',
-        function(value, element){
-            return this.optional(element) || /^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/i.test(value);
-        },
-        'Email 格式錯誤'
-    );
-
-    $.validator.addMethod(
-        "taiwan-phone",
-        function (value, element) {
+            console.log("form passed")
+            $('#mc-form [name="Email"]').val($('#email').val())
+            $('#mc-form [name="LastName"]').val($('#last-name').val());
+            $('#mc-form [name="FirstName"]').val($('#first-name').val());
+            $('#mc-form [name="MobilePhone"]').val($('#mobile').val());
+            $('#mc-form [name="OptIn"]').val($('#optin').prop('checked'));
+            $('#mc-form [name="Birthdate"]').val(dayjs($('#birth-year').val()).format("YYYY-MM-DD"));
+            $('#mc-form [name="CampaignData1__c"]').val($('#campaign-data-1').val());
+            $('#mc-form [name="CampaignData2__c"]').val($('#campaign-data-2').val());
+            // collect values from form
+            let formData = new FormData();
+            Object.keys($("#mc-form input")).forEach(function (el) {
+                let e = $("#mc-form input")[el]
+                let v = null;
+                if (e.type === "checkbox") {
+                    // console.log(e)
+                    v = $('#optin').prop('checked');
+                } else {
+                    v = e.value;
+                }
+                formData.append(e.name, v);
+                console.log('use', e.name, v)
+            });
             
-            const phoneReg6 = new RegExp(/^(0|886|\+886)?(9\d{8})$/).test(value);
-			const phoneReg7 = new RegExp(/^(0|886|\+886){1}[2-8]-?\d{6,8}$/).test(value);
-
-            if ($('#fake_supporter_phone').val()) {
-                return (phoneReg6 || phoneReg7)
-            }
-            console.log('phone testing')
-            return true
-        },
-        "電話格式不正確，請只輸入數字 0912345678 和 02-23612351")
-
-    $.validator.addClassRules({ // connect it to a css class
-        "email": {email: true},
-        "taiwan-phone" : { "taiwan-phone" : true }
-    });
-
-    $("#fake-form").validate({
-        errorPlacement: function(error, element) {
-            console.log(error)
-            element.parents("div.form-field:first").after( error );
-        },
-        submitHandler: function(form) {
-            
-            // modify the original form
-        $('#mc-form [name="Email"]').val($('#fake_supporter_emailAddress').val())
-        $('#mc-form [name="LastName"]').val($('#fake_supporter_lastName').val());
-        $('#mc-form [name="FirstName"]').val($('#fake_supporter_firstName').val());
-        $('#mc-form [name="MobilePhone"]').val($('#fake_supporter_phone').val());
-        $('#mc-form [name="OptIn"]').val($('#fake_optin').prop('checked'));
-        $('#mc-form [name="Birthdate"]').val(dayjs($('#fake_supporter_birthYear').val()).format("YYYY-MM-DD"));
-        //console.log("optin:", $('#mc-form [name="OptIn"]').value);
-        // collect values from form
-        let formData = new FormData();
-        Object.keys($("#mc-form input")).forEach(function (el) {
-            let e = $("#mc-form input")[el]
-            let v = null;
-            if (e.type === "checkbox") {
-                // console.log(e)
-                v = $('#fake_optin').prop('checked');
-            } else {
-                v = e.value;
-            }
-            formData.append(e.name, v);
-            // console.log('use', e.name, v)
-        });
-
-        // console.log($("#mc-form").attr("action"))
-        // need testing
-        $(".loading-cover").fadeIn();
-        return fetch($("#mc-form").attr("action"), {
-            method: "POST",
-            body: formData,
-        }).then((response) => {
+            // need testing
+            $(".loading-cover").fadeIn();
+            return fetch($("#mc-form").attr("action"), {
+                method: "POST",
+                body: formData,
+            }).then((response) => {
                 $(".loading-cover").fadeOut();
                 if (response.ok) {
                     return response.json()
@@ -216,40 +135,52 @@ const initForm = () => {
                     statusText: response.statusText,
                     type: response.type,
                 })
-            })
-            .then((response) => {
+            }).then((response) => {
                 if (response) {
                     console.log("mc form posted")
                     console.log('response', response)
                     window.pageJson.pageNumber = 2;
                     $(".page-1").hide();
                     $(".page-2").show();
-                    footer_main_page_url += `_tkpage`;
-                    footer_donate_url += `_tkpage`;
-                    footer_privacy_url += `_tkpage`;
-                    sendPetitionTracking('2021-plastic_policy');
+                    // footer_main_page_url += `_tkpage`;
+                    // footer_donate_url += `_tkpage`;
+                    // footer_privacy_url += `_tkpage`;
+                    // sendPetitionTracking('2021-plastic_policy');
                 }
-            })
-            .catch((error) => {
+            }).catch((error) => {
                 console.log(error);
                 this.formLoading = false;
                 
             });
-        },
-        invalidHandler: function(event, validator) {
-            // 'this' refers to the form
-            var errors = validator.numberOfInvalids();
-            if (errors) {
-                console.log(errors)
-                var message = errors == 1
-                    ? 'You missed 1 field. It has been highlighted'
-                    : 'You missed ' + errors + ' fields. They have been highlighted';
-                $("div.error").show();
-            } else {
-                $("div.error").hide();
-            }
         }
     });
+
+    function ValidationArchitectureContactForm() {
+        var error = true;
+        $('#architecturecontactform input[type=text]').each(function (index) {
+            if (index == 0 || index == 1) {
+                if ($(this).val() == null || $(this).val() == "") {
+                    $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
+                    error = false;
+                }
+                else {
+                    $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
+                }
+            }
+            // email
+            else if (index == 2) {
+                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
+                    $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
+                    error = false;
+                } else {
+                    $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
+                }
+            }
+
+        });
+        return error;
+    }
+
 }
 
 function init () {

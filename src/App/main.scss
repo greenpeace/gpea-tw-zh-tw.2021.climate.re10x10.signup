@@ -138,11 +138,6 @@ footer {
         width: unset;
         left: 20px;
     }
-    .fake_input--checkbox--label {
-        a {
-            color: yellow;
-        }
-    }
 }
 
 .en__component--page {
@@ -282,7 +277,7 @@ footer {
 }
 
 .email-suggestion {
-    color: white;
+    color: rgba(204, 0, 0,1);
     text-align: right;
     cursor: pointer;
 }

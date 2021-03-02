@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/css/main.a0b764cc.chunk.css",
+    "main.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.4a5be336.chunk.js",
+    "main.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.4a5be336.chunk.js.map",
+    "runtime-main.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/runtime-main.bf4ee79b.js",
+    "runtime-main.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/runtime-main.bf4ee79b.js.map",
+    "static/js/2.bace75ea.chunk.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.bace75ea.chunk.js",
+    "static/js/2.bace75ea.chunk.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.bace75ea.chunk.js.map",
+    "index.html": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/index.html",
+    "precache-manifest.995acc632f8886da72ad6d6375fcfa2d.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/precache-manifest.995acc632f8886da72ad6d6375fcfa2d.js",
+    "service-worker.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/service-worker.js",
+    "static/css/main.a0b764cc.chunk.css.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/css/main.a0b764cc.chunk.css.map",
+    "static/js/2.bace75ea.chunk.js.LICENSE.txt": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.bace75ea.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bf4ee79b.js",
+    "static/js/2.bace75ea.chunk.js",
+    "static/css/main.a0b764cc.chunk.css",
+    "static/js/main.4a5be336.chunk.js"
+  ]
+}

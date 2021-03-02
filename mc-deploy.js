@@ -34,7 +34,7 @@ const FTPS = require('ftps');
 // definitions
 let buildFolder = path.join(__dirname, "build")
 	EndpointURL = "https://cloud.greentw.greenpeace.org/petition-pp",
-	CampaignId = "7012u000000P1N8AAK",
+	CampaignId = "7012u000000P2LNAA0",
 	DonationPageUrl = "https://www.greenpeace.org/eastasia/", // not used now
 	interests = ["Climate"], // Arctic, Climate, Forest, Health, Oceans, Plastics
 	ftpConfigName = "ftp_tw", // refer to ~/.npm-en-uploader-secret
@@ -103,6 +103,8 @@ let formTmpl =
 		<input type="hidden" name="UtmContent" value="%%=v(@UtmContent)=%%">
 		<input type="hidden" name="UtmTerm" value="%%=v(@UtmTerm)=%%">
 		<input type="hidden" name="DonationPageUrl" value="%%=v(@DonationPageUrl)=%%">
+		<input name="CampaignData1__c" type="text" value="">
+		<input name="CampaignData2__c" type="text" value="">
 		<input name="req" type="hidden" value="post_data">
 
 		<input type="hidden" name="numSignupTarget" value="%%=v(@Petition_Signup_Target__c)=%%">

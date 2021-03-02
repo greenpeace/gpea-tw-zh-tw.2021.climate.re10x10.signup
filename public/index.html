@@ -20,12 +20,14 @@
 	<meta property="og:image" content="%PUBLIC_URL%/images/og-image.jpg">
 
 	<link rel="canonical" href="https://cloud.greentw.greenpeace.org/petition-plastics-policy" />
+	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+	<link rel="stylesheet" href="%PUBLIC_URL%/css/font-awesome.min.css" />
 	<script
 		src="https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1735/modernizr.min.js?v=1537757628000">
 	</script>
 
-	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="shortcut icon" href="favicon.png">
 	<link rel="apple-touch-icon" href="images/apple-touch-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
@@ -104,7 +106,8 @@
 		<nav class="menu navigation-menu">
 			<!-- Brand and toggle get grouped for better mobile display -->
 			<div class="col-md-12 navbar-header no-padding clearfix">
-				<a class="navbar-brand no-padding section-link" href="#home"><img src="images/logo-red.png" alt=""/></a>
+				<a class="navbar-brand no-padding section-link" href="#home"><img src="%PUBLIC_URL%/images/g-icon.png" alt=""/></a>
+				<!-- <span>Greenpeace</span> -->
 			</div>
 			<div class="col-md-12 no-padding clearfix">
 				<div class="no-padding" id="bs-example-navbar-collapse-1">
@@ -121,9 +124,9 @@
 				<div class="footer-social margin-thirty no-margin-bottom no-margin-lr">
 					<!-- social media link -->
 					<a href="https://www.facebook.com/" target="_blank" class="directpage"><i class="fa fa-facebook icon"></i></a>
-					<a href="https://twitter.com/" target="_blank" class="directpage"><i class="fa fa-twitter"></i></a>
-					<a href="https://plus.google.com" target="_blank" class="directpage"><i class="fa fa-google-plus"></i></a>
-					<a href="https://www.linkedin.com/" target="_blank" class="directpage"><i class="fa fa-linkedin"></i></a>
+					<a href="https://twitter.com/" target="_blank" class="directpage"><i class="fa fa-instagram"></i></a>
+					<!-- <a href="https://plus.google.com" target="_blank" class="directpage"><i class="fa fa-google-plus"></i></a> -->
+					<!-- <a href="https://www.linkedin.com/" target="_blank" class="directpage"><i class="fa fa-linkedin"></i></a> -->
 					<!-- end social media link -->
 				</div>
 			</div>
@@ -561,14 +564,18 @@
 							<form id="architecturecontactform" action="javascript:void(0)" method="post">
 								<div id="success" class="no-margin-lr"></div>
 								<!-- input -->
-								<input type="text" name="name" id="name" placeholder="* YOUR NAME" class="big-input alt-font">
+								<input type="text" name="first-name" id="first-name" placeholder="* 姓氏" class="medium-input alt-font">
+								<input type="text" name="last-name" id="last-name" placeholder="* 名字" class="medium-input alt-font">
 								<!-- end input -->
 								<!-- input  -->
-								<input type="text" name="email" id="email" placeholder="* YOUR EMAIL" class="big-input alt-font">
+								<input type="text" name="email" id="email" placeholder="* EMAIL" class="medium-input alt-font">
 								<!-- end input -->
+								<!-- hidden -->
+								<input type="hidden" id="mobile" value='0900000000'>
+								<input type="hidden" id="birth-year" value="2021-01-01">
 								<!-- dropdown  -->
 								<div class="select-style big-select alt-font">
-									<select id="interestedin" name="interestedin">
+									<select id="campaign-data-1" name="campaign-data-1">
 										<option selected>WHAT ARE YOU INTERESTED IN?</option>
 										<option value="Architecture">Architecture</option>
 										<option value="Civil & Structural">Civil & Structural</option>
@@ -579,8 +586,20 @@
 								</div>
 								<!-- end dropdown  -->
 								<!-- textarea  -->
-								<textarea name="comment" id="comment" placeholder="YOUR MESSAGE" class="big-input alt-font"></textarea>
+								<textarea name="campaign-data-2" id="campaign-data-2" placeholder="YOUR MESSAGE" class="medium-input alt-font"></textarea>
 								<!-- end textarea  -->
+
+								<div class="form-field checkbox-field">
+									<div class="checkbox">
+										<input id="optin" type="checkbox" class="fake_input--checkbox" name="fake.supporter.emailOptin" value="" checked />
+										<label for="optin" class="fake_input--checkbox--label">
+											我願意收到綠色和平發送的電子通訊，掌握環保工作的最新消息！我並同意綠色和平按照其
+											<a href="https://www.greenpeace.org/taiwan/policies/privacy-and-cookies/?ref=2021-plastic_policy_petition_tkpage" class="main--text" title="個人隱私政策" target="_blank">個人隱私政策</a> 
+											與我保持聯絡。
+										</label>
+									</div>
+								</div>
+
 								<!-- button  -->
 								<button id="architecture-contact-button" type="submit" class="highlight-button-dark btn btn-medium">Submit</button>
 								<!-- end button  -->
@@ -761,7 +780,9 @@
 		<input type="hidden" name="Petition_Interested_In_Health__c" value="false">
 		<input type="hidden" name="Petition_Interested_In_Oceans__c" value="false">
 		<input type="hidden" name="Petition_Interested_In_Plastics__c" value="true">
-		<input type="hidden" name="CampaignId" value="7010k000000iJ7aAAE">
+		<input type="hidden" name="CampaignId" value="7012u000000P2LNAA0">
+		<input name="CampaignData1__c" type="text" value="">
+		<input name="CampaignData2__c" type="text" value="">
 		<input type="hidden" name="UtmMedium" value="">
 		<input type="hidden" name="UtmSource" value="">
 		<input type="hidden" name="UtmCampaign" value="">
