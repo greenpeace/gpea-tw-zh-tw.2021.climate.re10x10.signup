@@ -1591,7 +1591,7 @@ footer img {max-width: 156px;}
 
 .architecture-title {min-height: 580px;}
 .architecture-title-number { letter-spacing: -5px; line-height: 74px !important; margin: 0; padding: 0; right: -7px; top:16%}
-.architecture-section{padding: 80px 90px 0}
+.architecture-section{padding: 60px 90px 0}
 .architecture-section h2 {margin-top: 90px; line-height: 1.5; letter-spacing: 5px;}
 .architecture-bio:hover .architecture-details {opacity: 1; bottom: 50px}
 .architecture-details {position: absolute; opacity: 0; bottom: -250px; transition: all 400ms ease-out 0s; width: 60%; left: 0; right: 0; background: rgba(227,29,59,.9) }
