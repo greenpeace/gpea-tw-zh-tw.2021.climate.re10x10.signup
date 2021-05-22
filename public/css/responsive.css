@@ -56,7 +56,7 @@
 }
 
 @media (max-width: 1199px) {
-    section { padding: 110px 0;}
+    section { padding: 110px 0 0 0;}
 
     .md-center-col{ float:none !important; margin-left:auto !important; margin-right:auto !important}
     /* border */
@@ -513,7 +513,7 @@
     .sm-z-index-0 {z-index:0 !important;}
     .sm-z-index-minus2 {z-index:-2 !important;}
     .sm-no-transition * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-    section { padding: 130px 0; }
+    section { padding: 130px 0 0 0; }
 
     /* text */
     .sm-text-center { text-align: center !important}
@@ -657,7 +657,7 @@
     .slider-typography .slider-typography-option2 p {font-size: 12px;}
 
     /* agency */
-    section { padding: 80px 0;}
+    section { padding: 80px 0 0 0;}
     .agency-skill {min-height: 0;}
     .blog-post-style1 .post-thumbnail img {height: 100%; width: 100%}
 
@@ -670,7 +670,7 @@
     .adventure-details-destinations{ right: 0;}
 
     /* architecture */
-    .architecture-title { min-height: 400px;}
+    .architecture-title { min-height: 300px;}
     .architecture-section h2 {margin-top: 70px;}
     .architecture-section { padding: 70px;}
     .portfolio-filter-tab-style-6 li {margin: 0 !important}
@@ -881,7 +881,7 @@
     .xs-z-index-0 {z-index:0 !important;}
     .xs-z-index-minus2 {z-index:-2 !important;}
     .xs-no-transition * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-    section { padding: 130px 0; }
+    section { padding: 130px 0 0 0; }
 
     /* text */
     .xs-text-center { text-align: center !important}
@@ -957,7 +957,7 @@
     /* header */
     .navbar-toggle .icon-bar {background: #fff;}
     .navbar-toggle { margin-right: 0}
-    .navbar-collapse {box-shadow: none; background:rgba(0,0,0,.95); width: 100%; position: absolute; top: 75px}
+    .navbar-collapse {box-shadow: none; background:rgba(0,0,0,.95); width: 100%; position: absolute; top: 50px}
     .navbar.shrink .navbar-collapse {top:60px}
     .navbar li.active a { border-bottom: 1px solid #fff; display: inline-block; }
 
@@ -1005,7 +1005,7 @@
     /* agency */
     /* byGC */
     /* .slider-typography .slider-typography-option1 span {font-size: 56px; line-height: 60px;} */
-    section { padding: 80px 0;}  
+    section { padding: 80px 0 0 0;}  
     .post-thumbnail > img { height: 100%; width: auto;}
     
     /* restaurant */
@@ -1022,7 +1022,7 @@
     .adventure-details-destinations{ right: 1px;}
 
     /* architecture */
-    .architecture-section { padding: 40px 15px;}
+    .architecture-section { padding: 40px 15px 10px 15px;}
     .architecture-section h2 { margin-top: 30px;}
     .slider-typography .slider-typography-option5 p {font-size: 14px;}
     .slider-typography .slider-typography-option5 span {font-size: 27px;line-height: 32px;}
@@ -1143,7 +1143,7 @@
     .footer-social a {margin: 0 10px;}  
 
     /* restaurant */
-    section { padding: 60px 0;}
+    section { padding: 60px 0 0 0;}
     .restaurant-dishes { height: 410px; margin-top: 0px; width: 300px;}
     .menu-img { display: none !important;}
     .menu-text { width: 100% !important;}

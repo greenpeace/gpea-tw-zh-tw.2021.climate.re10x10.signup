@@ -8,30 +8,129 @@ const Mailcheck = require('mailcheck');
 // let footer_donate_url = `https://supporter.ea.greenpeace.org/tw/s/donate?campaign=plastics&ref=2021-plastic_policy_petition-footer`
 // let footer_privacy_url = `https://www.greenpeace.org/taiwan/policies/privacy-and-cookies/?ref=2021-plastic_policy_petition`
 
-// window.directTo = function (type) {
-//     switch (type){
-//         case 'main':
-//             window.open(footer_main_page_url, '_blank');
-//             break
-//         case 'donate':
-//             window.open(footer_donate_url, '_blank');
-//             break
-//         case 'privacy':
-//             window.open(footer_privacy_url, '_blank');
-//             break
-//         default: 
-//         window.open(footer_privacy_url, '_blank');
-//     }
-// }
+window.directTo = function (url) {
+    window.open(url, '_blank');
+}
+
+const memberList = require("./ourMember.json");
+
+window.showSlider = function (evt, index) {
+    $('.square-btn').removeClass("active")
+    $(evt).addClass("active")
+}
+
+function renderMemberList () {
+    let btnHTML = ``;
+    let itemHTML  = ``
+    
+    for (let i of memberList) {
+        console.log(i)
+        btnHTML += `<div class="col-sm-4 padding-two no-padding-left">
+            <a class="square-btn btn ${i.index === 0 ? "active" : ""}" href="#square-btn-tab-${i.index}" aria-controls="profile" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
+        </div>`
+
+        itemHTML += `<div role="tabpanel" class="tab-pane fade ${i.index === 0 ? "in active" : ""}" id="square-btn-tab-${i.index}">
+        <div class="__navigation_left __navigation_left-${i.index}">
+            <h4><i class='fa fa-angle-left'></i></h4>
+        </div>
+        <div class="__navigation_right __navigation_right-${i.index}">
+            <h4><i class='fa fa-angle-right'></i></h4>
+        </div>
+        <div class="owl-carousel owl-theme owl-our-members" id="owl-carousel-card-${i.index}">`;
+
+        for (let d of i.data) {
+            itemHTML += `
+                <div class="item">
+                    <div class="owl-item-img">
+                        <img src="${d.img}" alt="">
+                    </div>
+                    <div class="owl-item-title">
+                        <h5>${d.title}</h5>
+                    </div>
+                    <div class="owl-item-description">
+                        <p>${d.description}</p>
+                    </div>
+                    <div class="owl-item-footer">
+                        <span class="item-year">${d.targetYear}</span> 年完成 <span class="item-percent">${d.targetPercent}</span> 
+                    </div>
+                </div>`
+        }
+
+        itemHTML += '</div></div>'
+
+        // itemHTML += `<div class="item">
+        //     <div class="owl-item-img">
+        //         <img src="${i.img}" alt="">
+        //     </div>
+        //     <div class="owl-item-title">
+        //         <h5>${i.title}</h5>
+        //     </div>
+        //     <div class="owl-item-description">
+        //         <p>${i.description}</p>
+        //     </div>
+        //     <div class="owl-item-footer">
+        //         <span class="item-year">${i.targetYear}</span> 年完成 <span class="item-percent">${i.targetPercent}</span> 
+        //     </div>
+        // </div>`
+    }
+    
+    $("#square-btn-container").html(btnHTML);
+    $("#owl-our-members-container").html(itemHTML);
+
+    for (let i of memberList) {
+        
+        $(`#owl-carousel-card-${i.index}`).owlCarousel({
+            items : 2,
+            pagination: false,
+        });
+        
+        let owl = $(`#owl-carousel-card-${i.index}`).data('owlCarousel');
+
+        $(`.__navigation_right-${i.index}`).click(function () {
+            owl.next() 
+        })
+
+        $(`.__navigation_left-${i.index}`).click(function () {
+            owl.prev() 
+        })
+    }
+
+    
+}
 
 $(document).ready(function() {
     console.log( "ready!" );
+    $("._show-bg").click(function () {
+        $(".__show-bg").fadeIn();
+        $(".__show-slider").hide();
+        $(".__tab_changing").addClass("col-sm-6")
+        $(".__tab_changing").removeClass("col-sm-5")
+    })
+    $("._show-slider").click(function () {
+        $(".__show-bg").hide();
+        $(".__show-slider").fadeIn();
+        $(".__tab_changing").removeClass("col-sm-6")
+        $(".__tab_changing").addClass("col-sm-5")
+    })
     // initProgressBar();
-    // createYearOptions();
+    createYearOptions();
+    renderMemberList();
     initForm();
     checkEmail();
     init();
 });
+
+function createYearOptions() {
+    console.log(createYearOptions);
+    let currYear = new Date().getFullYear()
+    $("#birth-year").append(`<option select value="">出生年份</option>`);
+    for (var i = 0; i < 80; i++) {
+        let option = `<option value="01/01/${currYear-i}">${currYear-i}</option>`
+
+        $("#birth-year").append(option);
+        // $('#en__field_supporter_NOT_TAGGED_6').append(option);
+    }
+}
 
 /**
  * email suggestion / email correction

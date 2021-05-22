@@ -207,6 +207,8 @@ a.light-gray-text:hover { color: #7f7f7f !important}
 /* line height */
 .line-height-18 {line-height: 18px !important}
 .line-height-20 {line-height: 20px !important}
+.line-height-24 {line-height: 24px !important}
+.line-height-28 {line-height: 28px !important}
 
 /* typography */
 .first-letter{color: #000; float: left; font-size: 50px; left: 0; line-height: 1; margin: 0 20px 10px 0; position: relative; top: 4px;}
@@ -568,7 +570,7 @@ i { color: #9a9a9a; margin:0}
 .z-index-0 {z-index:0 !important;}
 .z-index-minus2 {z-index:-2 !important;}
 .no-transition *, .owl-carousel *, .mfp-container * { transition-timing-function: none; -moz-transition-timing-function: none; -webkit-transition-timing-function: none; -o-transition-timing-function: none; transition-duration: 0s; -moz-transition-duration: 0s; -webkit-transition-duration: 0s; -o-transition-duration: 0s; }
-section { padding: 80px 0; position: relative; z-index: 1;}
+section { padding: 0px 0 0 0; position: relative; z-index: 1;}
 .button-bg-area{padding: 80px 0;}
 
 /* ===================================
@@ -614,7 +616,7 @@ section { padding: 80px 0; position: relative; z-index: 1;}
 
 .button { margin-top:0; margin-bottom: 0}
 .btn.btn-large { font-size: 18px; padding: 18px 35px;}
-.btn.btn-medium { font-size: 14px; padding: 10px 22px;}
+.btn.btn-medium { font-size: 14px; padding: 10px 42px;}
 .btn.btn-small { font-size: 11px; padding: 5px 14px; letter-spacing:1px}
 .btn.btn-very-small {font-size: 9px; padding: 4px 12px 3px; letter-spacing:1px}
 
@@ -706,16 +708,16 @@ section { padding: 80px 0; position: relative; z-index: 1;}
 
 .owl-carousel { overflow: hidden; }
 .owl-buttons { position: static; }
-.owl-prev, .owl-next { color: #111; display: block; font-size: 16px; height: 105px; line-height: 105px; margin-top:-35px; opacity: 0; position: absolute; text-align: center; top: 50%; width: 105px; z-index: 6; }
-.owl-prev {left: -70px;}
+.owl-prev, .owl-next { color: #fff; display: block; font-size: 24px; height: 105px; line-height: 105px; margin-top:-35px; opacity: 0; position: absolute; text-align: center; top: 50%; width: 105px; z-index: 6; }
+.owl-prev {left: 35px;}
 .owl-next {right: -70px;}
-.owl-prev:before, .owl-next:before { background-color:#fff; border-radius:2px; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); content: ""; display: block; height: 66%; left: 0; position: absolute; width: 66%; }
+.owl-prev:before, .owl-next:before { background-color: transparent; border-radius:2px; content: ""; display: block; height: 66%; left: 0; position: absolute; width: 66%; }
 .owl-next:before { left: auto; right: 0; }
-.owl-prev .fa, .owl-next .fa {color: #000; font-size: 24px; position: relative; top: -15%;}
+.owl-prev .fa, .owl-next .fa {color: #fff; font-size: 72px; position: relative; top: -15%;}
 .owl-prev .fa{ right: 4%}
 .owl-next .fa { left: 4%;}
-.owl-carousel:hover .owl-prev {left: -35px; opacity: 1; }
-.owl-carousel:hover .owl-next { opacity: 1; right: -35px; }
+.owl-carousel:hover .owl-prev {left: 0px; opacity: 1; }
+.owl-carousel:hover .owl-next { opacity: 1; right: 0px; }
 .owl-pagination { bottom: 30px; display: block; left: 0; position: absolute; text-align: center; width: 100%; z-index: 5 !important; }
 .owl-page { display: inline-block; padding: 6px 5px; }
 .owl-page span { background: none repeat scroll 0 0 rgba(255, 255, 255, 0.7); border-radius: 4px; box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1); display: block; height: 7px; transition: all 0.27s cubic-bezier(0, 0, 0.58, 1) 0s; width: 7px; }
@@ -738,7 +740,7 @@ section { padding: 80px 0; position: relative; z-index: 1;}
 .square-pagination .owl-page.active span {border:none !important; transform:none!important; background:#fff !important}
 
 /* hide next-prev arrow */
-.dark-pagination-without-next-prev-arrow .owl-prev, .dark-pagination-without-next-prev-arrow .owl-next {display: none}
+/* .dark-pagination-without-next-prev-arrow .owl-prev, .dark-pagination-without-next-prev-arrow .owl-next {display: none} */
 
 /* hide dot navigation */
 .owl-no-pagination .owl-pagination { display: none}
@@ -890,7 +892,7 @@ nav.sidebar-nav .container { vertical-align: top; padding:60px 40px }
 
 /* slider typography - style 5 */
 /* .slider-typography .slider-typography-option5 span { font-size: 72px; line-height: 70px ; letter-spacing: -2px; width: 100%; display: block  } */
-.slider-typography .slider-typography-option5 h1 { font-size: 10rem; line-height: 70px ; letter-spacing: -2px; width: 100%; display: block  }
+.slider-typography .slider-typography-option5 h1 { font-size: 8rem; line-height: 70px ; letter-spacing: -2px; width: 100%; display: block  }
 .slider-typography .slider-typography-option5 p { font-size: 20px; line-height: 2;}
 .slider-typography .separator-line-medium-thick { margin: 84px 0}
 
@@ -1313,7 +1315,7 @@ ul.list-line li span {min-width:130px; display:inline-block}
 .medium-input, .medium-textarea, .medium-select select { padding: 12px 25px; border:2px solid rgba(0,0,0,.1) !important; font-size: 14px !important}
 .medium-input:focus, .medium-select:focus {border:2px solid rgba(0,0,0,.5) !important;}
 
-.small-input, .small-textarea { padding: 12px 15px; border:2px solid rgba(0,0,0,.1); font-size: 11px !important}
+.small-input, .small-textarea { padding: 9px 15px; border:2px solid rgba(0,0,0,.1); font-size: 11px !important}
 .small-input:focus, .small-select:focus {border:2px solid rgba(0,0,0,.5);}
 .small-select select {padding: 8px 15px;}
 
@@ -1592,7 +1594,7 @@ footer img {max-width: 156px;}
 .architecture-title {min-height: 580px;}
 .architecture-title-number { letter-spacing: -5px; line-height: 74px !important; margin: 0; padding: 0; right: -7px; top:16%}
 .architecture-section{padding: 60px 90px 0}
-.architecture-section h2 {margin-top: 90px; line-height: 1.5; letter-spacing: 5px;}
+.architecture-section h2 {margin-top: 40px; line-height: 1.5; letter-spacing: 5px;}
 .architecture-bio:hover .architecture-details {opacity: 1; bottom: 50px}
 .architecture-details {position: absolute; opacity: 0; bottom: -250px; transition: all 400ms ease-out 0s; width: 60%; left: 0; right: 0; background: rgba(227,29,59,.9) }
 .architecture-bio:hover .architecture-img img {transition: all .3s ease; -webkit-transition: all .3s ease; -moz-transition: all .3s ease;  -webkit-filter: grayscale(1); filter: grayscale(1);}

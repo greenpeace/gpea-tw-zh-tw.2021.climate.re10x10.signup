@@ -18,7 +18,8 @@ body {
 }
 
 footer {
-    position: relative;;
+    position: relative;
+    background-color: #404040;
 }
 .error {
     color: white;
@@ -97,14 +98,16 @@ footer {
 
 .btn-footer {
     background-color: transparent;
-    border: 1px solid black;
+    border: none;
     border-radius: 5px;
     margin-bottom: 10px;
+    width: 100%;
+    text-align: left;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 997px) {
     h1 {
-        font-size: 3rem !important;
+        font-size: 3.6rem !important;
     }
     h2 {
         font-size: 2rem !important;
@@ -141,14 +144,19 @@ footer {
         text-align: center;
         margin-bottom: 50px;
     }
-}
 
-@media (max-width: 767px) {
-    h1 {
-        font-size: 2rem !important;
+    .btn-footer {
+        background-color: transparent;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 0;
+        width: 100%;
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 5px;
+        padding-top: 5px;
+        padding-bottom: 10px;
     }
 }
-
 @media (max-width: 991px) {
     .architecture-details {
         opacity: 1;
@@ -182,4 +190,148 @@ footer {
     color: rgba(204, 0, 0,1);
     text-align: right;
     cursor: pointer;
+}
+
+.naviagtor--down {
+    position: absolute;
+    bottom: 10px;
+    right: 2%;
+    width: 40px;
+    display: none;
+}
+@media (max-width: 997px) {
+    .naviagtor--down {
+        transform: translateX(-50%);
+        left: 50%;
+    }
+}
+
+.center__items-container {
+    padding-top: 100px;
+    .center__items {
+        position: relative;
+        margin-bottom: 100px;
+        display: flex;
+        transform: scale(1.1);
+        ._icon {
+            width: 30%;
+            text-align: right;
+            margin-right: 25px;
+        }
+        ._text {
+            width: 70%;
+            text-align: left;
+        }
+    }
+}
+
+.__navigation_left {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 100;
+    transform: scale(2);
+}
+
+.__navigation_right {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: scale(2);
+    z-index: 100;
+    padding: 10px 20px;
+}
+
+.owl-our-members {
+    margin-top: 80px;
+    padding: 10px 50px; 
+    .item{
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        margin: 20px;
+        padding: 15px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+        .owl-item-title {
+            margin-top: 30px;
+        }
+        .owl-item-description {
+            margin-top: 10px;
+        }
+        .owl-item-footer {
+            margin-top: 10px;
+            .item-year,.item-percent {
+                font-size: 2rem;
+            }
+            .item-percent {
+                color: $main--color;
+            }
+        }
+    }
+    
+}
+
+.square-btn {
+    margin: 0 2%;
+    color: black;
+    font-size: 1.3rem;
+    width: 100%;
+    background-color: transparent;
+    height: 10vw;
+    border: 1.5px solid #d9d9d9;
+    font-weight: 800;
+    letter-spacing: 1.2pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square-btn.active {
+    border: 1.5px solid #8DBC81;
+    color: #8DBC81;
+    background-color: #EFF6EE;
+
+}
+
+@media (max-width: 767px) {
+
+    .__navigation {
+        display: none;
+    }
+
+    #owl-our-members {
+        overflow: visible;
+        transform: translateX(0) scale(0.8);
+        margin-top: -20px;
+        .owl-wrapper-outer {
+            overflow: visible;
+        }
+        .item{
+            margin: 20px;
+        }
+        
+    }
+    .center__items-container {
+        padding-top: 50px;
+        .center__items {
+            position: relative;
+            margin-bottom: 50px;
+            display: flex;
+            transform: scale(0.9);
+            ._icon {
+                width: 15%;
+                text-align: right;
+                margin-right: 25px;
+            }
+            ._text {
+                width: 85%;
+                text-align: left;
+            }
+        }
+    }
 }

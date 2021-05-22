@@ -1,0 +1,309 @@
+[
+    {
+        "index": 0,
+        "name": "紡織",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "紡織1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "紡織2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "紡織3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "紡織4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 1,
+        "name": "美妝與清潔品零售",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "美妝與清潔品零售1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "美妝與清潔品零售2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "美妝與清潔品零售3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "美妝與清潔品零售4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 2,
+        "name": "金融",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "金融1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "金融2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "金融3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "金融4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index":3,
+        "name": "資通訊",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "資通訊1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "資通訊2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "資通訊3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "資通訊4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 4,
+        "name": "共享運具",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 5,
+        "name": "共享運具",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 6,
+        "name": "共享運具",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 7,
+        "name": "共享運具",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    },
+    {
+        "index": 8,
+        "name": "共享運具",
+        "data": [
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具1",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具2",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具3",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            },
+            {
+                "img": "https://fakeimg.pl/800x600/",
+                "title": "共享運具4",
+                "description": "企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話企業的話",
+                "targetYear": "2026",
+                "targetPercent": "84%"
+            }
+        ]
+    }
+    
+]
