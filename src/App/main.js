@@ -1,5 +1,6 @@
 import './main.scss'
 const dayjs = require("dayjs")
+const axios = require("axios");
 const ProgressBar = require('progressbar.js')
 const {$, dataLayer, currency} = window
 const Mailcheck = require('mailcheck');
@@ -21,15 +22,16 @@ window.showSlider = function (evt, index) {
 
 function renderMemberList () {
     let btnHTML = ``;
-    let itemHTML  = ``
+    let owlCarouselHTML  = ``
+    let mobileOwlCarouselHTML  = ``
     
     for (let i of memberList) {
         console.log(i)
         btnHTML += `<div class="col-sm-4 padding-two no-padding-left">
-            <a class="square-btn btn ${i.index === 0 ? "active" : ""}" href="#square-btn-tab-${i.index}" aria-controls="profile" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
+            <a class="square-btn btn ${i.index === 0 ? "active" : ""}" href="#square-btn-tab-${i.index}" aria-controls="square-btn-tab-${i.index}" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
         </div>`
 
-        itemHTML += `<div role="tabpanel" class="tab-pane fade ${i.index === 0 ? "in active" : ""}" id="square-btn-tab-${i.index}">
+        owlCarouselHTML += `<div role="tabpanel" class="tab-pane ${i.index === 0 ? "active" : ""}" id="square-btn-tab-${i.index}">
         <div class="__navigation_left __navigation_left-${i.index}">
             <h4><i class='fa fa-angle-left'></i></h4>
         </div>
@@ -39,7 +41,23 @@ function renderMemberList () {
         <div class="owl-carousel owl-theme owl-our-members" id="owl-carousel-card-${i.index}">`;
 
         for (let d of i.data) {
-            itemHTML += `
+            mobileOwlCarouselHTML += `
+            <div class="item">
+                <div class="owl-item-img">
+                    <img src="${d.img}" alt="">
+                </div>
+                <div class="owl-item-title">
+                    <h5>${d.title}</h5>
+                </div>
+                <div class="owl-item-description">
+                    <p>${d.description}</p>
+                </div>
+                <div class="owl-item-footer">
+                    <span class="item-year">${d.targetYear}</span> 年完成 <span class="item-percent">${d.targetPercent}</span> 
+                </div>
+            </div>`
+
+            owlCarouselHTML += `
                 <div class="item">
                     <div class="owl-item-img">
                         <img src="${d.img}" alt="">
@@ -56,31 +74,30 @@ function renderMemberList () {
                 </div>`
         }
 
-        itemHTML += '</div></div>'
-
-        // itemHTML += `<div class="item">
-        //     <div class="owl-item-img">
-        //         <img src="${i.img}" alt="">
-        //     </div>
-        //     <div class="owl-item-title">
-        //         <h5>${i.title}</h5>
-        //     </div>
-        //     <div class="owl-item-description">
-        //         <p>${i.description}</p>
-        //     </div>
-        //     <div class="owl-item-footer">
-        //         <span class="item-year">${i.targetYear}</span> 年完成 <span class="item-percent">${i.targetPercent}</span> 
-        //     </div>
-        // </div>`
+        owlCarouselHTML += '</div></div>'
     }
     
     $("#square-btn-container").html(btnHTML);
-    $("#owl-our-members-container").html(itemHTML);
+    $("#owl-our-members-container").html(owlCarouselHTML);
+    $('#mobile-owl-our-members').html(mobileOwlCarouselHTML)
+    $(`#mobile-owl-our-members`).owlCarousel({
+        items : 2,
+        pagination: false
+    });
+    let owlMobile = $(`#mobile-owl-our-members`).data('owlCarousel');
+    $(`.__navigation_right_mobile`).click(function () {
+        owlMobile.next() 
+    })
+
+    $(`.__navigation_left_mobile`).click(function () {
+        owlMobile.prev() 
+    })
 
     for (let i of memberList) {
         
         $(`#owl-carousel-card-${i.index}`).owlCarousel({
-            items : 2,
+            items : 3,
+            itemsDesktop : [1440,2],
             pagination: false,
         });
         
@@ -94,7 +111,6 @@ function renderMemberList () {
             owl.prev() 
         })
     }
-
     
 }
 
@@ -190,7 +206,7 @@ const initForm = () => {
     console.log('init form')
 
     $("#architecture-contact-button").click(function () {
-        var error = ValidationArchitectureContactForm();
+        var error = ValidationForm("user-form");
         console.log(error)
         if (error) {
 
@@ -254,32 +270,32 @@ const initForm = () => {
         }
     });
 
-    function ValidationArchitectureContactForm() {
-        var error = true;
-        $('#architecturecontactform input[type=text]').each(function (index) {
-            if (index == 0 || index == 1) {
-                if ($(this).val() == null || $(this).val() == "") {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
-                }
-                else {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
-                }
-            }
-            // email
-            else if (index == 2) {
-                if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").addClass("required-error");
-                    error = false;
-                } else {
-                    $("#architecturecontactform").find("input:eq(" + index + ")").removeClass("required-error");
-                }
-            }
+}
 
-        });
-        return error;
-    }
+function ValidationForm(id) {
+    var error = false;
+    $(`#${id} input[type=text]`).each(function (index) {
+        if (index == 0 || index == 1 || index == 2) {
+            if ($(this).val() == null || $(this).val() == "") {
+                $(`#${id}`).find("input:eq(" + index + ")").addClass("required-error");
+                error = true;
+            }
+            else {
+                $(`#${id}`).find("input:eq(" + index + ")").removeClass("required-error");
+            }
+        }
+        // email
+        else if (index == 3) {
+            if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
+                $(`#${id}`).find("input:eq(" + index + ")").addClass("required-error");
+                error = true;
+            } else {
+                $(`#${id}`).find("input:eq(" + index + ")").removeClass("required-error");
+            }
+        }
 
+    });
+    return error;
 }
 
 function init () {
@@ -328,3 +344,42 @@ function sendPetitionTracking(eventLabel, eventValue) {
 	window.uetq = window.uetq || [];  
 	window.uetq.push ('event', 'signup', {'event_category': 'petitions', 'event_label': eventLabel, 'event_value': 0});
 }
+
+async function addEnterprise () {
+
+    var error = ValidationForm("ent-form");
+    let k = $("#ent-knowledge").val()
+    if (!k) {
+        $(`#ent-knowledge`).addClass("required-error");
+    }
+    if (error) {
+        console.log("form validating error")
+        return 
+    }
+
+    $(`#ent-knowledge`).removeClass("required-error");
+
+    console.log("adding enterprise data")
+    const appScript = `https://script.google.com/macros/s/AKfycbzS4_qLUhmgrUJGG8dTetsbd9Te_RcUzLjeE-Ko30vDkiXLY9CnzgRGJgcK44ghp3gl-w/exec`
+    let ipRes = await axios.get("https://api.ipify.org?format=json");
+    let ip = ipRes.data.ip;
+
+    let postData = {
+        "rows": [
+            {
+                "ip": ip,
+                "name": $("#ent-name").val(),
+                "contact_name": $("#ent-contact-name").val(),
+                "contact_position": $("#ent-contact-position").val(),
+                "contact_email": $("#ent-contact-email").val(),
+                "knowledge": $("#ent-knowledge").val(),
+                "receive_news": $("#ent-optin").prop("checked")
+            }
+        ]
+    }
+
+    console.log(postData)
+    await axios.post(appScript + `?sheetName=Enterprises`, postData, { headers: {'Content-Type': 'text/plain;charset=utf-8'}});
+}
+
+window.addEnterprise = addEnterprise;

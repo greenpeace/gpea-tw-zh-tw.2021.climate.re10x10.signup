@@ -245,11 +245,11 @@
 	<!-- end slider -->
 
 	<!-- about section -->
-	<section id="about" class="wow fadeIn section-top-pattern">
+	<section id="about" class="wow fadeIn section-top-pattern xs-no-padding-top">
 		<div class="container-fluid">
 			<div class="row">
 				<!-- section image -->
-				<div class="col-md-6 col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden "
+				<div class="col-md-6 col-sm-6 hidden-xs no-padding architecture-title cover-background overflow-hidden "
 					style="background-image:url('%PUBLIC_URL%/images/RE10x10_about-01-min.png');">
 					<!-- <span class="architecture-title-number title-big alt-font font-weight-600 position-absolute white-text">01</span> -->
 				</div>
@@ -257,24 +257,29 @@
 				<!-- section title -->
 				<div class="col-md-6 col-sm-6 col-xs-12 no-padding architecture-title sm-min-height-auto">
 					<div class="architecture-section">
-						<span
-							class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large"><span
-								class="main--text">/</span> About</span>
-						<h2 class="alt-font text-uppercase font-weight-600 deep-gray-text md-title-large">
-							讓企業引領台灣<br>邁向永續能源時代
-						</h2>
-						<div class="row" style="padding-top: 40px;">
-							<div class="col-sm-12 counter-style1 sm-no-border">
-								<span class="timer counter-number alt-font font-weight-500 main--text" data-to="785"
-									data-speed="2000"></span>&nbsp;&nbsp;&nbsp;&nbsp;已加入企業<br><br>
-								<a href="#target-form" style="margin-top: 20px;"
-									class="highlight-button-blue-dark btn btn-medium button letter-spacing-1 main--bgcolor inner-link">成為
-									+1 的力量</a>
+						<div class="architecture-section-content-container">
+							<span class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large">
+								<span class="main--text __slash">/</span> About
+							</span>
+							<h2 class="alt-font text-uppercase font-weight-600 deep-gray-text md-title-large">
+								讓企業引領台灣<br>邁向永續能源時代
+							</h2>
+							<div class="row" style="padding-top: 40px;">
+								<div class="col-sm-12 counter-style1 sm-no-border">
+									<span class="timer counter-number alt-font font-weight-500 main--text" data-to="785"
+										data-speed="2000"></span>&nbsp;&nbsp;&nbsp;&nbsp;已加入企業<br><br>
+									<a href="#target-form" style="margin-top: 10px;"
+										class="highlight-button-blue-dark btn btn-medium button letter-spacing-1 main--bgcolor inner-link">成為
+										+1 的力量</a>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<!-- end section title -->
+			</div>
+			<div class="row visible-xs ">
+				<div class="col-xs-12 no-padding architecture-title cover-background overflow-hidden" style="margin-top:30px; background-image:url('%PUBLIC_URL%/images/RE10x10_about-02-min.jpg');"></div>
 			</div>
 		</div>
 		<div class="container-fluid">
@@ -283,8 +288,7 @@
 				<div class="col-sm-6 architecture-title tab-style-3 __tab_changing">
 					<div class="col-sm-10 col-sm-offset-1 architecture-section no-padding-lr md-margin-five md-no-margin-tb xs-no-padding-top">
 						<!-- tab navigation -->
-						<ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border font-weight-600"
-							role="tablist">
+						<ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border font-weight-600 __slider-tab-nav" role="tablist">
 							<li role="presentation"
 								class="active xs-display-block xs-margin-nine xs-no-margin-lr xs-no-margin-top"><a
 									href="#about_us" aria-controls="about_us" role="tab" data-toggle="tab"
@@ -317,7 +321,7 @@
 							<!-- end tab item -->
 							<!-- tab item -->
 							<div role="tabpanel" class="tab-pane fade in" id="our_member">
-								<div class="col-md-12 col-sm-12 no-padding" id="square-btn-container">
+								<div class="hidden-xs col-md-12 col-sm-12 no-padding" id="square-btn-container">
 									<!-- <p class="text-large line-height-28">
 										綠色和平自 2020 年底開始推廣 RE10x10 企業購綠
 										電行動，至今已有 14 家企業公開承諾於 2025 年以
@@ -367,17 +371,28 @@
 										<button class="square-btn">美妝與清潔品零售</button>
 									</div>
 								</div>
+								<div class="visible-xs row">
+									<div class="__navigation_left __navigation_left_mobile">
+										<h4><i class='fa fa-angle-left'></i></h4>
+									</div>
+									<div class="__navigation_right __navigation_right_mobile">
+										<h4><i class='fa fa-angle-right'></i></h4>
+									</div>
+									<div id="mobile-owl-our-members" class="owl-carousel owl-theme owl-our-members">
+										
+									</div>	
+								</div>
 							</div>
 							<!-- end tab item -->
 						</div>
 					</div>
 				</div>
 				<!-- end tab -->
-				<div class="col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden __show-bg" style="background-image:url('%PUBLIC_URL%/images/RE10x10_about-02-min.jpg');"></div>
-				<div class="col-sm-7 col-xs-12 no-padding architecture-title cover-background overflow-hidden __show-slider" style="display: none;">
+				<div class="hidden-xs col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden __show-bg" style="background-image:url('%PUBLIC_URL%/images/RE10x10_about-02-min.jpg');"></div>
+				<div class="hidden-xs col-sm-7 col-xs-12 no-padding architecture-title cover-background overflow-hidden __show-slider" style="display: none;">
 					
 					<div class="tab-content" id="owl-our-members-container">
-						<div role="tabpanel" class="tab-pane fade in active" id="tab">
+						<div role="tabpanel" class="tab-pane active" id="tab">
 							<div class="__navigation_left">
 								<h4><i class='fa fa-angle-left'></i></h4>
 							</div>
@@ -426,7 +441,7 @@
 
 	<!-- video section -->
 	<section id="events" class="wow fadeIn padding-ten no-padding-left no-padding-right">
-		<div class="container">
+		<div class="container-fluid">
 			<!-- <div class="row">
 				<div class="col-md-12 col-sm-12">
 					<span class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large"><span class="main--text">/</span> 影片介紹</span>
@@ -452,19 +467,21 @@
 				<!-- section title -->
 				<div class="col-sm-6 col-xs-12 no-padding architecture-title sm-min-height-auto">
 					<div class="architecture-section">
-						<span
-							class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large"><span
-								class="main--text">/</span> JOIN</span>
-						<h2 class="alt-font text-uppercase font-weight-600 deep-gray-text md-title-large">
-							攜手有志之士<br>
-							佈局潔淨低碳未來
-						</h2>
-						<div class="col-sm-11 no-padding" style="margin-top: 30px">
-							<p class="text-large line-height-28 no-padding">
-								若您的企業有意願加入RE10x10
-								計畫，歡迎填寫下方表單，將有專人與您進一步聯繫；若您是一般民眾，綠色和平也鼓勵您成為再生能源的使用者，只要填寫表單資料，我們會將公民電廠手冊寄至您的信箱，詳細的步驟解說能幫助您帶領社區一同建置太陽能發電設備，以實際行動為地球減碳！
-							</p>
+						<div class="architecture-section-content-container">
+							<span class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large">
+								<span class="main--text">/</span> JOIN</span>
+							<h2 class="alt-font text-uppercase font-weight-600 deep-gray-text md-title-large">
+								攜手有志之士<br>
+								佈局潔淨低碳未來
+							</h2>
+							<div class="col-sm-11" style="margin-top: 30px">
+								<p class="text-large line-height-28 no-padding">
+									若您的企業有意願加入RE10x10
+									計畫，歡迎填寫下方表單，將有專人與您進一步聯繫；若您是一般民眾，綠色和平也鼓勵您成為再生能源的使用者，只要填寫表單資料，我們會將公民電廠手冊寄至您的信箱，詳細的步驟解說能幫助您帶領社區一同建置太陽能發電設備，以實際行動為地球減碳！
+								</p>
+							</div>
 						</div>
+						
 					</div>
 				</div>
 				<!-- end section title -->
@@ -479,7 +496,7 @@
 				<div class="col-md-6 col-sm-12 architecture-title overflow-hidden sm-min-height-auto">
 					<div class="sm-no-padding">
 						<div class="col-sm-10 col-sm-offset-1 text-center tab-style-4" style='margin-top: 40px'>
-							<ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 font-weight-600 xs-width-100 xs-no-border"
+							<ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 font-weight-600 xs-width-100 "
 								style="width:100%; display: flex;" role="tablist">
 								<li style="width:50%" role="presentation" class="active xs-display-block xs-no-border">
 									<a href="#enterprise-form" aria-controls="enterprise-form" role="tab"
@@ -495,27 +512,23 @@
 										<div class="no-margin-lr">
 											<div
 												class="col-md-12 col-sm-12 no-padding sm-padding-nineteen xs-padding-twenty-nine xs-no-padding-lr xs-no-padding-top">
-												<form id="ent-form" action="javascript:void(0)" method="post">
+												<form id="ent-form" action="javascript:void(0)" method="post" onsubmit="addEnterprise()">
 													<div id="success" class="no-margin-lr"></div>
-													<input type="text" name="first-name" id="first-name"
-														placeholder="* 企業名" class="medium-input alt-font">
+													<input type="text" name="ent-name" id="ent-name" placeholder="* 企業名" class="medium-input alt-font">
 													<div class="row">
 														<div class="col-sm-6">
-															<input type="text" name="last-name" id="last-name"
-																placeholder="* 聯絡人姓名" class="medium-input alt-font">
+															<input type="text" name="ent-contact-name" id="ent-contact-name" placeholder="* 聯絡人姓名" class="medium-input alt-font">
 														</div>
 														<div class="col-sm-6">
-															<input type="text" name="last-name" id="last-name"
-																placeholder="* 聯絡人職稱" class="medium-input alt-font">
+															<input type="text" name="ent-contact-position" id="ent-contact-position" placeholder="* 聯絡人職稱" class="medium-input alt-font">
 														</div>
 													</div>
-													<input type="text" name="email" id="email" placeholder="* 聯絡人Email"
-														class="medium-input alt-font">
+													<input type="text" name="ent-contact-email" id="ent-contact-email" placeholder="* 聯絡人Email" class="medium-input alt-font">
 													<!-- <input type="hidden" id="mobile" value='0900000000'>
 													<input type="hidden" id="birth-year" value="2021-01-01"> -->
 													<div class="select-style medium-select alt-font">
-														<select id="campaign-data-1" name="campaign-data-1">
-															<option selected>目前對再生能源瞭解程度</option>
+														<select id="ent-knowledge" name="ent-knowledge">
+															<option value="" selected>目前對再生能源瞭解程度</option>
 															<option value="不熟悉">不熟悉</option>
 															<option value="稍微有研究">稍微有研究</option>
 															<option value="已經在使用">已經在使用</option>
@@ -525,7 +538,7 @@
 
 													<div class="form-field checkbox-field">
 														<div class="checkbox">
-															<input id="optin" type="checkbox"
+															<input id="ent-optin" type="checkbox"
 																class="fake_input--checkbox"
 																name="fake.supporter.emailOptin" value="" checked />
 															<label for="optin" class="fake_input--checkbox--label"
@@ -538,8 +551,7 @@
 															</label>
 														</div>
 													</div>
-													<button id="architecture-contact-button" type="submit"
-														class="highlight-button-dark btn btn-medium">立即報名</button>
+													<button type="submit" class="highlight-button-dark btn btn-medium">立即報名</button>
 												</form>
 											</div>
 										</div>
@@ -555,16 +567,13 @@
 													<div id="success" class="no-margin-lr"></div>
 													<div class="row">
 														<div class='col-sm-6'>
-															<input type="text" name="first-name" id="first-name"
-																placeholder="* 姓氏" class="medium-input alt-font">
+															<input type="text" name="first-name" id="first-name" placeholder="* 姓氏" class="medium-input alt-font">
 														</div>
 														<div class="col-sm-6">
-															<input type="text" name="last-name" id="last-name"
-																placeholder="* 名字" class="medium-input alt-font">
+															<input type="text" name="last-name" id="last-name" placeholder="* 名字" class="medium-input alt-font">
 														</div>
 													</div>
-													<input type="text" name="email" id="email" placeholder="* EMAIL"
-														class="medium-input alt-font">
+													<input type="text" name="email" id="email" placeholder="* EMAIL" class="medium-input alt-font">
 													<input type="text" name="phone" id="mobile" value=''
 														placeholder="* 電話號碼" class="medium-input alt-font">
 													<div class="select-style medium-select alt-font">
@@ -588,8 +597,7 @@
 															</label>
 														</div>
 													</div>
-													<button id="architecture-contact-button" type="submit"
-														class="highlight-button-dark btn btn-medium">立即報名</button>
+													<button id="architecture-contact-button" type="submit" class="highlight-button-dark btn btn-medium">立即報名</button>
 												</form>
 											</div>
 										</div>
@@ -604,7 +612,7 @@
 				<div class="col-md-6 col-sm-12 architecture-title overflow-hidden main--bgcolor">
 					<!-- text -->
 					<div class="architecture-section center__items-container">
-						<div class="center__items" style="">
+						<div class="center__items">
 							<div class="_icon">
 								<i style='font-weight: 800;'
 									class="icon-map-pin icon-medium white-text margin-one-half no-margin-lr"></i>
@@ -614,7 +622,7 @@
 								<p class="text-large line-height-28">100 臺北市中正區重慶南路一段 109 號</p>
 							</div>
 						</div>
-						<div class="center__items" style="">
+						<div class="center__items">
 							<div class="_icon">
 								<i style='font-weight: 800;'
 									class="icon-phone icon-medium white-text margin-one-half no-margin-lr"></i>
@@ -624,7 +632,7 @@
 								<p class="text-large line-height-28">inquiry.tw@greenpeace.org</p>
 							</div>
 						</div>
-						<div class="center__items" style="">
+						<div class="center__items">
 							<div class="_icon">
 								<i style='font-weight: 800;'
 									class="icon-clipboard icon-medium white-text margin-one-half no-margin-lr"></i>
@@ -642,7 +650,7 @@
 	</section>
 
 	<!-- joinRE section -->
-	<section id="joinRE" class="wow fadeIn section-top-pattern">
+	<section id="joinRE" class="wow fadeIn section-top-pattern xs-no-padding-top">
 		<div class="container-fluid">
 			<div class="row">
 				<!-- section image -->
@@ -651,18 +659,20 @@
 				<!-- section title -->
 				<div class="col-md-6 col-sm-6 col-xs-12 no-padding architecture-title sm-min-height-auto">
 					<div class="architecture-section">
-						<span
-							class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large"><span
-								class="main--text">/</span> NEWS</span>
-						<h2 class="alt-font text-uppercase font-weight-600 deep-gray-text md-title-large">加入
-							RE10x10<br>綠電資訊一手掌握</h2>
-						<div class="row" style="padding-top: 40px;">
-							<div class="col-sm-12 counter-style1 sm-no-border">
-								<span class="timer counter-number alt-font font-weight-500 main--text" data-to="785"
-									data-speed="2000"></span>&nbsp;&nbsp;&nbsp;&nbsp;已加入企業<br><br>
-								<a href="#target-form" style="margin-top: 20px;"
-									class="highlight-button-blue-dark btn btn-medium button letter-spacing-1 main--bgcolor inner-link">成為
-									+1 的力量</a>
+						<div class="architecture-section-content-container">
+							<span
+								class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large"><span
+									class="main--text">/</span> NEWS</span>
+							<h2 class="alt-font text-uppercase font-weight-600 deep-gray-text md-title-large">加入
+								RE10x10<br>綠電資訊一手掌握</h2>
+							<div class="row" style="padding-top: 40px;">
+								<div class="col-sm-12 counter-style1 sm-no-border">
+									<span class="timer counter-number alt-font font-weight-500 main--text" data-to="785"
+										data-speed="2000"></span>&nbsp;&nbsp;&nbsp;&nbsp;已加入企業<br><br>
+									<a href="#target-form" style="margin-top: 20px;"
+										class="highlight-button-blue-dark btn btn-medium button letter-spacing-1 main--bgcolor inner-link">成為
+										+1 的力量</a>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -671,49 +681,49 @@
 			</div>
 		</div>
 	</section>
-	<section class="wow fadeIn" style="padding-top: 70px;">
-		<div class="container">
+	<section class="wow fadeIn xs-no-padding-top" style="padding-top: 70px;">
+		<div class="container-fluid">
 			<div class="row">
 				<!-- service item -->
-				<div class="col-md-3 col-sm-6">
-					<div class="col-sm-2">
-						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 10px; display: block;">01</span>
+				<div class="col-md-3 col-sm-6 __news_block">
+					<div class="col-sm-2 col-xs-2">
+						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 5px; display: block; float: right;">01</span>
 					</div>
-					<div class="col-sm-10 no-padding-right">
-						<h4 class="text-uppercase text-large alt-font font-weight-500" style="letter-spacing: 1.4px; margin-bottom: 20px; display: block;">臺灣中小企業響應 RE10x10，帶頭示範能源轉型</h4>
+					<div class="col-sm-10 col-xs-10 no-padding">
+						<h6 class="text-uppercase alt-font font-weight-500" style="margin-bottom: 20px; display: block;">臺灣中小企業響應 RE10x10，帶頭示範能源轉型</h6>
 						<p class="text-medium">綠色和平主辦「RE10x10 中小企業購綠電論壇」，有 14 家企業共同承諾 2025 年前將使用 10% 以上綠電，跟上國際趨勢</p>
 						<div class="separator-line-thick main--bgcolor margin-twenty no-margin-lr sm-no-margin-bottom"></div>
 					</div>
 				</div>
 				<!-- service item -->
-				<div class="col-md-3 col-sm-6">
-					<div class="col-sm-2">
-						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 10px; display: block;">02</span>
+				<div class="col-md-3 col-sm-6 __news_block">
+					<div class="col-sm-2 col-xs-2">
+						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 5px; display: block; float: right;">02</span>
 					</div>
-					<div class="col-sm-10 no-padding-right">
-						<h4 class="text-uppercase text-large alt-font font-weight-500" style="letter-spacing: 1.4px; margin-bottom: 20px; display: block;">跨國企業競相宣告使用 100% 再生能源</h4>
+					<div class="col-sm-10 col-xs-10 no-padding">
+						<h6 class="text-uppercase alt-font font-weight-500" style="margin-bottom: 20px; display: block;">跨國企業競相宣告使用 100% 再生能源</h6>
 						<p class="text-medium">國際科技龍頭陸續加入 RE100，綠電將如何影響臺灣企業與國際接軌？</p>
 						<div class="separator-line-thick main--bgcolor margin-twenty no-margin-lr sm-no-margin-bottom"></div>
 					</div>
 				</div>
 				<!-- service item -->
-				<div class="col-md-3 col-sm-6">
-					<div class="col-sm-2">
-						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 10px; display: block;">03</span>
+				<div class="col-md-3 col-sm-6 __news_block">
+					<div class="col-sm-2 col-xs-2">
+						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 5px; display: block; float: right;">03</span>
 					</div>
-					<div class="col-sm-10 no-padding-right">
-						<h4 class="text-uppercase text-large alt-font font-weight-500" style="letter-spacing: 1.4px; margin-bottom: 20px; display: block;">再生能源已是世界趨勢</h4>
+					<div class="col-sm-10 col-xs-10 no-padding">
+						<h6 class="text-uppercase alt-font font-weight-500" style="margin-bottom: 20px; display: block;">再生能源已是世界趨勢</h6>
 						<p class="text-medium">近年來，再生能源無論技術與成本皆有驚人突破，分享 10 個最新資訊讓您跟上國際脈動</p>
 						<div class="separator-line-thick main--bgcolor margin-twenty no-margin-lr sm-no-margin-bottom"></div>
 					</div>
 				</div>
 				<!-- service item -->
-				<div class="col-md-3 col-sm-6">
-					<div class="col-sm-2">
-						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 10px; display: block;">04</span>
+				<div class="col-md-3 col-sm-6 __news_block">
+					<div class="col-sm-2 col-xs-2">
+						<span class="main--text font-weight-600" style="font-size: 2.6rem; margin-top: 5px; display: block; float: right;">04</span>
 					</div>
-					<div class="col-sm-10 no-padding-right">
-						<h4 class="text-uppercase text-large alt-font font-weight-500" style="letter-spacing: 1.4px; margin-bottom: 20px; display: block;">Urban Planning</h4>
+					<div class="col-sm-10 col-xs-10 no-padding">
+						<h6 class="text-uppercase alt-font font-weight-500" style="margin-bottom: 20px; display: block;">Urban Planning</h6>
 						<p class="text-medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
 						<div class="separator-line-thick main--bgcolor margin-twenty no-margin-lr sm-no-margin-bottom"></div>
 					</div>
@@ -730,14 +740,21 @@
 	<section id="events" class="wow fadeIn padding-ten no-padding-left no-padding-right">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-12 col-sm-12" style="text-align: center;">
+				<div class="architecture-section visible-xs">
+					<div class="architecture-section-content-container">
+						<span class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large">
+							<span class="main--text">/</span> 近期活動
+						</span>
+					</div>
+				</div>
+				<div class="hidden-xs col-md-12 col-sm-12" style="text-align: center;">
 					<span class="title-extra-large alt-font font-weight-600 text-uppercase deep-gray-text display-block sm-title-large"><span class="main--text">/</span> 近期活動</span>
 				</div>
 			</div>
 			<div class="row">
 				<div class="margin-ten no-margin-bottom no-margin-lr clearfix">
 					<div class="col-md-12 col-sm-12 text-center tab-style-4">
-						<ul class="nav nav-tabs alt-font display-inline-block text-uppercase letter-spacing-1 font-weight-600 xs-width-100 xs-no-border"
+						<ul class="nav nav-tabs alt-font display-inline-block text-uppercase letter-spacing-1 font-weight-600 xs-width-100"
 							role="tablist">
 							<!-- <li role="presentation" class="active xs-display-block xs-no-border"><a href="#taipei-event" aria-controls="taipei-event" role="tab" data-toggle="tab" class="xs-display-block">臺北場說明會</a></li>
 							<li role="presentation" class="xs-display-block xs-no-border"><a href="#taichung-event" aria-controls="taichung-event" role="tab" data-toggle="tab" class="xs-display-block">臺中場說明會</a></li>

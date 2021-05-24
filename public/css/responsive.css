@@ -209,7 +209,7 @@
     .md-text-extra-small { font-size:10px !important; line-height:15px!important;}
     .md-text-small { font-size:11px !important; line-height:15px!important;}
     .md-text-medium{ font-size:14px !important; line-height:25px !important;}
-    .md-text-large { font-size: 15px !important; line-height: 20px !important; }
+    .md-text-large { font-size: 16px !important; line-height: 20px !important; }
     .md-text-extra-large { font-size: 18px !important; line-height: 25px !important;  }
     .md-title-small{ font-size:20px !important; line-height:27px !important;}
     .md-title-medium{ font-size:24px !important; line-height:28px !important;}
@@ -524,7 +524,7 @@
     .sm-text-extra-small { font-size:10px !important; line-height:15px!important;}
     .sm-text-small { font-size:11px !important; line-height:15px!important;}
     .sm-text-medium{ font-size:14px !important; line-height:20px !important;}
-    .sm-text-large { font-size: 15px !important; line-height: 20px !important; }
+    .sm-text-large { font-size: 16px !important; line-height: 20px !important; }
     .sm-text-extra-large { font-size: 18px !important; line-height: 25px !important;  }
     .sm-title-small{ font-size:20px !important; line-height:27px !important;}
     .sm-title-medium{ font-size:24px !important; line-height:28px !important;}
@@ -639,7 +639,7 @@
 
     /* team */
     .architecture-bio:hover .architecture-details { bottom: 0!important;}
-    .team-mood span.text-large { font-size: 15px !important;}
+    .team-mood span.text-large { font-size: 16px !important;}
 
     /* tab */
     ul.portfolio-filter-tab-style-6 { margin: 170px 30px 0 0;}
