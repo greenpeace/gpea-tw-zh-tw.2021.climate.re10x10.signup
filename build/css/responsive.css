@@ -715,7 +715,7 @@
     .center-logo-header .navbar-toggle .icon-bar { background: #000;}
     
     /* tattoo */
-    .header-white .navbar-nav a {color: #fff !important} 
+    .header-white .navbar-nav a {color: #000 !important} 
     .tattoo-art-box .title-extra { font-size: 40px !important; line-height: 40px !important;}
     .scrollToTop {display: none !important}
     .restaurant-dishes {width: 550px;}
@@ -957,9 +957,9 @@
     /* header */
     .navbar-toggle .icon-bar {background: #fff;}
     .navbar-toggle { margin-right: 0}
-    .navbar-collapse {box-shadow: none; background:rgba(0,0,0,.95); width: 100%; position: absolute; top: 50px}
-    .navbar.shrink .navbar-collapse {top:60px}
-    .navbar li.active a { border-bottom: 1px solid #fff; display: inline-block; }
+    .navbar-collapse {box-shadow: none; background:rgba(255,255,255,.95); width: 100%; position: absolute; top: 55px}
+    .navbar.shrink .navbar-collapse {top:50px}
+    .navbar li.active a { border-bottom: 1px solid #55a94f; display: inline-block; }
 
     /* work */
     .work-4col .grid li { width: 100%;}

@@ -13,7 +13,7 @@ window.directTo = function (url) {
     window.open(url, '_blank');
 }
 
-const memberList = require("./ourMember.json");
+const memberList = require("./ourMember");
 
 window.showSlider = function (evt, index) {
     $('.square-btn').removeClass("active")
@@ -27,8 +27,8 @@ function renderMemberList () {
     
     for (let i of memberList) {
         console.log(i)
-        btnHTML += `<div class="col-sm-4 padding-two no-padding-left">
-            <a class="square-btn btn ${i.index === 0 ? "active" : ""}" href="#square-btn-tab-${i.index}" aria-controls="square-btn-tab-${i.index}" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
+        btnHTML += `<div class="col-sm-3 padding-two no-padding-left">
+            <a class="square-btn btn __paragraph ${i.index === 0 ? "active" : ""}" href="#square-btn-tab-${i.index}" aria-controls="square-btn-tab-${i.index}" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
         </div>`
 
         owlCarouselHTML += `<div role="tabpanel" class="tab-pane ${i.index === 0 ? "active" : ""}" id="square-btn-tab-${i.index}">
@@ -53,7 +53,7 @@ function renderMemberList () {
                     <p>${d.description}</p>
                 </div>
                 <div class="owl-item-footer">
-                    <span class="item-year">${d.targetYear}</span> 年完成 <span class="item-percent">${d.targetPercent}</span> 
+                ${d.goal}
                 </div>
             </div>`
 
@@ -69,7 +69,7 @@ function renderMemberList () {
                         <p>${d.description}</p>
                     </div>
                     <div class="owl-item-footer">
-                        <span class="item-year">${d.targetYear}</span> 年完成 <span class="item-percent">${d.targetPercent}</span> 
+                    ${d.goal}
                     </div>
                 </div>`
         }
@@ -139,11 +139,11 @@ $(document).ready(function() {
 function createYearOptions() {
     console.log(createYearOptions);
     let currYear = new Date().getFullYear()
-    $("#birth-year").append(`<option select value="">出生年份</option>`);
+    $("#userBirthYear").append(`<option select value="">出生年份</option>`);
     for (var i = 0; i < 80; i++) {
         let option = `<option value="01/01/${currYear-i}">${currYear-i}</option>`
 
-        $("#birth-year").append(option);
+        $("#userBirthYear").append(option);
         // $('#en__field_supporter_NOT_TAGGED_6').append(option);
     }
 }
@@ -168,18 +168,20 @@ function checkEmail() {
 	];
 	let topLevelDomains = ["com", "net", "org"];
 
-	$("#email").on('blur', function() {
-        console.log($("#email").val())
+	$("#userEmail").on('blur', function() {
+        console.log($("#userEmail").val())
 		Mailcheck.run({
-			email: $("#email").val(),
+			email: $("#userEmail").val(),
 			domains: domains, // optional
 			topLevelDomains: topLevelDomains, // optional
 			suggested: (suggestion) => {      
                 $('.email-suggestion').remove();
-                $(`<div class="email-suggestion">您想輸入的是 <strong id="emailSuggestion">${suggestion.full}</strong> 嗎？</div>`).insertAfter("#email");
+
+                console.log(`suggested : ${suggestion.full}`)
+                $(`<div class="email-suggestion">您想輸入的是 <strong id="emailSuggestion">${suggestion.full}</strong> 嗎？</div>`).insertAfter("#userEmail");
                 
                 $(".email-suggestion").click(function() {
-                    $("#email").val($('#emailSuggestion').html());
+                    $("#userEmail").val($('#emailSuggestion').html());
                     $('.email-suggestion').remove();
                 });
 			},
@@ -206,96 +208,101 @@ const initForm = () => {
     console.log('init form')
 
     $("#architecture-contact-button").click(function () {
-        var error = ValidationForm("user-form");
-        console.log(error)
-        if (error) {
 
-            console.log("form passed")
-            $('#mc-form [name="Email"]').val($('#email').val())
-            $('#mc-form [name="LastName"]').val($('#last-name').val());
-            $('#mc-form [name="FirstName"]').val($('#first-name').val());
-            $('#mc-form [name="MobilePhone"]').val($('#mobile').val());
-            $('#mc-form [name="OptIn"]').val($('#optin').prop('checked'));
-            $('#mc-form [name="Birthdate"]').val(dayjs($('#birth-year').val()).format("YYYY-MM-DD"));
-            $('#mc-form [name="CampaignData1__c"]').val($('#campaign-data-1').val());
-            $('#mc-form [name="CampaignData2__c"]').val($('#campaign-data-2').val());
-            // collect values from form
-            let formData = new FormData();
-            Object.keys($("#mc-form input")).forEach(function (el) {
-                let e = $("#mc-form input")[el]
-                let v = null;
-                if (e.type === "checkbox") {
-                    // console.log(e)
-                    v = $('#optin').prop('checked');
-                } else {
-                    v = e.value;
-                }
-                formData.append(e.name, v);
-                console.log('use', e.name, v)
-            });
-            
-            // need testing
-            $(".loading-cover").fadeIn();
-            return fetch($("#mc-form").attr("action"), {
-                method: "POST",
-                body: formData,
-            }).then((response) => {
-                $(".loading-cover").fadeOut();
-                if (response.ok) {
-                    return response.json()
-                } 
-                throw({
-                    ok: response.ok,
-                    status: response.status,
-                    statusText: response.statusText,
-                    type: response.type,
-                })
-            }).then((response) => {
-                if (response) {
-                    console.log("mc form posted")
-                    console.log('response', response)
-                    window.pageJson.pageNumber = 2;
-                    $(".page-1").hide();
-                    $(".page-2").show();
-                    // footer_main_page_url += `_tkpage`;
-                    // footer_donate_url += `_tkpage`;
-                    // footer_privacy_url += `_tkpage`;
-                    // sendPetitionTracking('2021-plastic_policy');
-                }
-            }).catch((error) => {
-                console.log(error);
-                this.formLoading = false;
-                
-            });
+        let error = false;
+
+        let data = {
+            userFirstName: $("#userFirstName").val(),
+            userLastName: $("#userLastName").val(),
+            userPhone: $("#userPhone").val(),
+            userEmail: $("#userEmail").val(),
+            userBirthYear: $("#userBirthYear").val(),
         }
-    });
-
-}
-
-function ValidationForm(id) {
-    var error = false;
-    $(`#${id} input[type=text]`).each(function (index) {
-        if (index == 0 || index == 1 || index == 2) {
-            if ($(this).val() == null || $(this).val() == "") {
-                $(`#${id}`).find("input:eq(" + index + ")").addClass("required-error");
+    
+        Object.keys(data).forEach(key => {
+            if (!data[key]) {
+                $(`#${key}`).addClass("required-error");
+                error = true
+            } else if (key === 'userEmail' && !/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)+$/i.test(data[key])) {
+                $(`#${key}`).addClass("required-error");
                 error = true;
-            }
-            else {
-                $(`#${id}`).find("input:eq(" + index + ")").removeClass("required-error");
-            }
-        }
-        // email
-        else if (index == 3) {
-            if (!(/(.+)@(.+){2,}\.(.+){2,}/.test($(this).val()))) {
-                $(`#${id}`).find("input:eq(" + index + ")").addClass("required-error");
-                error = true;
+            } else if (key === 'userPhone') {
+                console.log(data[key])
+                const phoneReg6 = new RegExp(/^(0|886|\+886)?(9\d{8})$/).test(data[key]);
+                const phoneReg7 = new RegExp(/^(0|886|\+886){1}[3-8]-?\d{6,8}$/).test(data[key]);
+                const phoneReg8 = new RegExp(/^(0|886|\+886){1}[2]-?\d{8}$/).test(data[key]);
+
+                if (!phoneReg6 && !phoneReg7 && !phoneReg8) {
+                    $(`#${key}`).addClass("required-error");
+                    error = true;
+                }
+
             } else {
-                $(`#${id}`).find("input:eq(" + index + ")").removeClass("required-error");
+                $(`#${key}`).removeClass("required-error");
             }
+        })
+    
+        if (error) {
+            console.log("form validating error")
+            return 
         }
 
+        console.log("form passed")
+
+        $('#mc-form [name="Email"]').val(data.userEmail)
+        $('#mc-form [name="LastName"]').val(data.userLastName);
+        $('#mc-form [name="FirstName"]').val(data.userFirstName);
+        $('#mc-form [name="MobilePhone"]').val(data.userPhone);
+        $('#mc-form [name="OptIn"]').val($('#userOptin').prop('checked'));
+        $('#mc-form [name="Birthdate"]').val(dayjs(data.userBirthYear).format("YYYY-MM-DD"));
+        // $('#mc-form [name="CampaignData1__c"]').val($('#campaign-data-1').val());
+        // $('#mc-form [name="CampaignData2__c"]').val($('#campaign-data-2').val());
+        // collect values from form
+        let formData = new FormData();
+        Object.keys($("#mc-form input")).forEach(function (el) {
+            let e = $("#mc-form input")[el]
+            let v = null;
+            if (e.type === "checkbox") {
+                // console.log(e)
+                v = $('#optin').prop('checked');
+            } else {
+                v = e.value;
+            }
+            formData.append(e.name, v);
+            console.log('use', e.name, v)
+        });
+        
+        // need testing
+        $(".loading-cover").fadeIn();
+        return fetch($("#mc-form").attr("action"), {
+            method: "POST",
+            body: formData,
+        }).then((response) => {
+            $(".loading-cover").fadeOut();
+            $(".form-block").hide();
+            $(".thank-you-block").removeClass("hidden");
+            $(".thank-you-words").html("系統將自動發送公民手冊至您的電子信箱．")
+            if (response.ok) {
+                return response.json()
+            } 
+            throw({
+                ok: response.ok,
+                status: response.status,
+                statusText: response.statusText,
+                type: response.type,
+            })
+        }).then((response) => {
+            if (response) {
+                console.log("mc form posted")
+                console.log('response', response)
+                window.pageJson.pageNumber = 2;
+            }
+        }).catch((error) => {
+            console.log(error);
+            $(".loading-cover").fadeOut();
+        });
     });
-    return error;
+
 }
 
 function init () {
@@ -347,39 +354,70 @@ function sendPetitionTracking(eventLabel, eventValue) {
 
 async function addEnterprise () {
 
-    var error = ValidationForm("ent-form");
-    let k = $("#ent-knowledge").val()
-    if (!k) {
-        $(`#ent-knowledge`).addClass("required-error");
+    let error = false
+    let data = {
+        entName: $("#entName").val(),
+        entContactName: $("#entContactName").val(),
+        entContactEmail: $("#entContactEmail").val(),
+        entContactPosition: $("#entContactPosition").val(),
+        entKnowledge: $("#entKnowledge").val(),
     }
+
+    Object.keys(data).forEach(key => {
+        if (!data[key]) {
+            $(`#${key}`).addClass("required-error");
+            error = true
+        } else {
+            $(`#${key}`).removeClass("required-error");
+        }
+    })
+
     if (error) {
         console.log("form validating error")
         return 
     }
 
-    $(`#ent-knowledge`).removeClass("required-error");
+    Object.keys(data).forEach(key => {
+        if (!data[key]) {
+            $(`#${key}`).removeClass("required-error");
+        }
+    })
 
-    console.log("adding enterprise data")
-    const appScript = `https://script.google.com/macros/s/AKfycbzS4_qLUhmgrUJGG8dTetsbd9Te_RcUzLjeE-Ko30vDkiXLY9CnzgRGJgcK44ghp3gl-w/exec`
-    let ipRes = await axios.get("https://api.ipify.org?format=json");
-    let ip = ipRes.data.ip;
+    $(".loading-cover").fadeIn();
+    try {
 
-    let postData = {
-        "rows": [
-            {
-                "ip": ip,
-                "name": $("#ent-name").val(),
-                "contact_name": $("#ent-contact-name").val(),
-                "contact_position": $("#ent-contact-position").val(),
-                "contact_email": $("#ent-contact-email").val(),
-                "knowledge": $("#ent-knowledge").val(),
-                "receive_news": $("#ent-optin").prop("checked")
-            }
-        ]
+        console.log("adding enterprise data")
+        const appScript = `https://script.google.com/macros/s/AKfycbzS4_qLUhmgrUJGG8dTetsbd9Te_RcUzLjeE-Ko30vDkiXLY9CnzgRGJgcK44ghp3gl-w/exec`
+        let ipRes = await axios.get("https://api.ipify.org?format=json");
+        let ip = ipRes.data.ip;
+
+        let postData = {
+            "rows": [
+                {
+                    "ip": ip,
+                    "name": data.entName,
+                    "contact_name": data.entContactName,
+                    "contact_position": data.entContactEmail,
+                    "contact_email": data.entContactPosition,
+                    "knowledge": data.entKnowledge,
+                    "receive_news": $("#ent-optin").prop("checked")
+                }
+            ]
+        }
+
+        console.log(postData)
+        await axios.post(appScript + `?sheetName=Enterprises`, postData, { headers: {'Content-Type': 'text/plain;charset=utf-8'}});
+
+    } catch (err) {
+        console.log(err)
+    } finally {
+        $(".loading-cover").hide();
+        $(".form-block").hide();
+        $(".thank-you-block").removeClass("hidden");
+        $(".thank-you-words").html("你的資料已成功送出，起靜候專人與您聯繫．")
     }
-
-    console.log(postData)
-    await axios.post(appScript + `?sheetName=Enterprises`, postData, { headers: {'Content-Type': 'text/plain;charset=utf-8'}});
+    
+    
 }
 
 window.addEnterprise = addEnterprise;

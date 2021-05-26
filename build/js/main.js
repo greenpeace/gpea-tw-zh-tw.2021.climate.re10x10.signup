@@ -39,12 +39,14 @@ $(document).ready(function () {
  ====================================== */
 
     $(".owl-slider-full").owlCarousel({
-        navigation: true, // Show next and prev buttons
+        autoPlay: true,
+        stopOnHover : false,
+        navigation: false, // Show next and prev buttons
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
         pagination: true,
-        navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
+        // navigationText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"]
     });
 
     $("#owl-demo-background").owlCarousel({
