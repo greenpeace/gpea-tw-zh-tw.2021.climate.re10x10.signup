@@ -38,7 +38,7 @@ const members = [
                 "img": require("./members/3-1.jpg"),
                 "title": "Clarins 新加坡商克蘭詩股份有限公司台灣分公司",
                 "description": "國際知名女性美妝品牌，以「取之自然、尊重自然」為核心，努力不懈創造更美好、更美麗的未來",
-                "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">100%</span> 綠電`,
+                "goal": `致力於 <span class="item-year">2025</span> 年使用 <span class="item-percent">100%</span> 綠電`,
             },
             // {
             //     "img": require("./members/3-2.jpg"),
@@ -80,7 +80,7 @@ const members = [
     },
     {
         "index": 4,
-        "name": "雲端科技",
+        "name": "雲端<br>科技",
         "data": [
             {
                 "img": require("./members/5-2.jpg"),
@@ -92,7 +92,7 @@ const members = [
     },
     {
         "index": 5,
-        "name": "娛樂與媒體",
+        "name": "娛樂與<br>媒體",
         "data": [
             {
                 "img": require("./members/5-1.jpg"),
@@ -104,7 +104,7 @@ const members = [
     },
     {
         "index": 6,
-        "name": "共享運具",
+        "name": "共享<br>運具",
         "data": [
             {
                 "img": require("./members/6-1.jpg"),
@@ -122,7 +122,7 @@ const members = [
     },
     {
         "index": 7,
-        "name": "設計與製造",
+        "name": "設計與<br>製造",
         "data": [
             {
                 "img": require("./members/7-1.jpg"),
