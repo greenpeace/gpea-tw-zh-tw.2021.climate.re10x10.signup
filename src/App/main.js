@@ -414,7 +414,7 @@ async function addEnterprise () {
         $(".loading-cover").hide();
         $(".form-block").hide();
         $(".thank-you-block").removeClass("hidden");
-        $(".thank-you-words").html("你的資料已成功送出，起靜候專人與您聯繫．")
+        $(".thank-you-words").html("你的資料已成功送出，請靜候專人與您聯繫．")
     }
     
     
