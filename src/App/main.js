@@ -307,18 +307,37 @@ const initForm = () => {
 
 function init () {
     
-    const EN_PAGE_STATUS = resolveEnPagePetitionStatus()
-	// console.log("EN_PAGE_STATUS", EN_PAGE_STATUS)
-	if (EN_PAGE_STATUS==="FRESH") {
-    
-        $(".page-2").hide();
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get("utm_source") === "dd") {
+        $(".donate-btn").hide();
+        $(".share-section").removeClass("col-md-4")
+        $(".share-section").removeClass("col-sm-6")
+        $(".share-section").addClass("col-md-8")
+        $(".share-section").addClass("col-sm-12")
+        $(".slider-typography").css("position", "relative");
+        $(".slider-typography").css("padding-top", "15%");
+        $(".line-share-img").hide();
 
-	} else if (EN_PAGE_STATUS==="SUCC") {
-        
-        $('.page-1').hide();
-        $('.page-2').show();
-        $("section").hide();
-        $("#home").show();
+        switch (urlParams.get("utm_content")) {
+            case "tp":
+                $(".line-link").attr("href", "http://act.gp/GPLINE_tp");
+                $(".tp-line").show();
+                break;
+            case "tc":
+                $(".tc-line").show();
+                $(".line-link").attr("href", "http://act.gp/GPLINE_tc");
+                break;
+            case "ks":
+                $(".ks-line").show();
+                $(".line-link").attr("href", "http://act.gp/GPLINE_ks");
+                break;
+            default:
+                $(".tp-line").show();
+                $(".line-link").attr("href", "http://act.gp/GPLINE_tp");
+                break
+        }
+    } else {
+        $(".line-share-section").hide()
     }
     
     $(".loading-cover").fadeOut();

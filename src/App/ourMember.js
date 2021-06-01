@@ -7,8 +7,7 @@ const members = [
                 "img": require("./members/1-1.jpg"),
                 "title": "台灣大哥大股份有限公司",
                 "description": "以「Open Possible 能所不能」為品牌精神，透過想像力、科技力、行動力、連結力，與感動力，讓用戶能所不能",
-                "goal": `<span class="item-year"></span>`,
-                // "goal": `<span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
+                "goal": `致力於 <span class="item-year">2040</span> 年使用 <span class="item-percent">100%</span> 綠電`,
             }
         ]
     },
@@ -137,7 +136,7 @@ const members = [
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
             },
             {
-                "img": require("./members/7-3.jpg"),
+                "img": require("./members/white.jpg"),
                 "title": "穩譚科技股份有限公司",
                 "description": "致力研發全球首款植物滅火藥劑，不只能有效滅火保障安全同時也保護環境，實現綠色消防時代",
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
