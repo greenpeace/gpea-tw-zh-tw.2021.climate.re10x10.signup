@@ -128,6 +128,7 @@ $(document).ready(function() {
         $(".__tab_changing").removeClass("col-sm-6")
         $(".__tab_changing").addClass("col-sm-5")
     })
+    $("._show-slider").click()
     // initProgressBar();
     createYearOptions();
     renderMemberList();
@@ -378,6 +379,7 @@ async function addEnterprise () {
         entName: $("#entName").val(),
         entContactName: $("#entContactName").val(),
         entContactEmail: $("#entContactEmail").val(),
+        entContactPhone: $("#entContactPhone").val(),
         entContactPosition: $("#entContactPosition").val(),
         entKnowledge: $("#entKnowledge").val(),
     }
@@ -386,6 +388,19 @@ async function addEnterprise () {
         if (!data[key]) {
             $(`#${key}`).addClass("required-error");
             error = true
+        } else if (key === 'entContactPhone') {
+            console.log(data[key])
+            const phoneReg6 = new RegExp(/^(0|886|\+886)?(9\d{8})$/).test(data[key]);
+            const phoneReg7 = new RegExp(/^(0|886|\+886){1}[3-8]-?\d{6,8}$/).test(data[key]);
+            const phoneReg8 = new RegExp(/^(0|886|\+886){1}[2]-?\d{8}$/).test(data[key]);
+
+            if (!phoneReg6 && !phoneReg7 && !phoneReg8) {
+                $(`#${key}`).addClass("required-error");
+                error = true;
+            } else {
+                $(`#${key}`).removeClass("required-error");
+            }
+
         } else {
             $(`#${key}`).removeClass("required-error");
         }
@@ -417,9 +432,11 @@ async function addEnterprise () {
                     "name": data.entName,
                     "contact_name": data.entContactName,
                     "contact_position": data.entContactEmail,
+                    "contact_phone": data.entContactPhone.toString(),
                     "contact_email": data.entContactPosition,
                     "knowledge": data.entKnowledge,
-                    "receive_news": $("#ent-optin").prop("checked")
+                    "receive_news": $("#ent-optin").prop("checked"),
+                    "created_at": dayjs().format("YYYY-MM-DD HH:mm:ss")
                 }
             ]
         }

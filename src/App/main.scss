@@ -390,7 +390,12 @@ footer {
             width: 20px;
             display: inline-block;
         }
-        h2 {margin-top: 40px; line-height: 1.5; letter-spacing: 5px;}
+        h2 {
+            margin-top: 40px; 
+            line-height: 1.5; 
+            letter-spacing: 5px;
+            white-space: nowrap;
+        }
 
     }
 }
@@ -497,9 +502,13 @@ footer {
 .__paragraph {
     font-size: 1.9rem !important;
 }
+.text--justify {
+    text-align: justify;
+}
+
 @media (min-width:768px) and (max-width:1440px) {
     .__paragraph {
-        font-size: 1.65rem !important;
+        font-size: 1.55rem !important;
     }   
 }
 
@@ -507,6 +516,9 @@ footer {
     .__paragraph {
         font-size: 1.55rem !important;
     }   
+    #about_us {
+        padding-top: 10px;
+    }
 }
 
 .line-link {

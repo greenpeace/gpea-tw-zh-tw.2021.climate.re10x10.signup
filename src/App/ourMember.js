@@ -16,7 +16,7 @@ const members = [
         "name": "紡織",
         "data": [
             {
-                "img": require("./members/2-1.jpg"),
+                "img": require("./members/2-1.jpeg"),
                 "title": "儒鴻企業股份有限公司",
                 "description": "科技紡織公司，專業彈性功能性針織布料製造廠和服裝製造廠商",
                 "goal": `<span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
@@ -136,7 +136,7 @@ const members = [
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
             },
             {
-                "img": require("./members/white.jpg"),
+                "img": require("./members/7-3.jpeg"),
                 "title": "穩譚科技股份有限公司",
                 "description": "致力研發全球首款植物滅火藥劑，不只能有效滅火保障安全同時也保護環境，實現綠色消防時代",
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
@@ -192,7 +192,7 @@ const members = [
             {
                 "img": require("./members/8-8.jpg"),
                 "title": "鉅舵顧問有限公司",
-                "description": "全球暖化的巨浪襲擊而來，由鉅舵團隊為您掌舵共同邁向環境與資源永續發展的未來。",
+                "description": "以成為乘載人類未來的諾亞方舟為願景，提供永續發展、氣候變遷、能源轉型等各類議題之專業服務。",
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
             },
             {
@@ -228,7 +228,7 @@ const members = [
             {
                 "img": require("./members/9-7.jpg"),
                 "title": "丰采美學牙醫診所",
-                "description": "",
+                "description": "大臺北指標型牙醫診所，以「人」為本，從「心」出發為診所的中心思想，結合馬斯洛人類需求理論發展出診所的兩大理念——「自我實現」與「美學」。",
                 "goal": ` <span class="item-year">2022</span> 年使用 <span class="item-percent">100%</span> 綠電`,
             },
             {
@@ -275,7 +275,7 @@ const members = [
         "data": [
             {
                 "img": require("./members/10-1.jpg"),
-                "title": "E-SENSE 逸勝科技股份有限公司",
+                "title": "E-SENSE 逸盛科技股份有限公司",
                 "description": "逸盛科技長期關心環境議題，我們選用對環境較為友善的材質及符合環保要求的包裝材料",
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
             }
