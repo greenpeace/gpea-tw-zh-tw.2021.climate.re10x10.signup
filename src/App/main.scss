@@ -400,7 +400,7 @@ footer {
     }
 }
 
-@media (min-width: 768px) { 
+@media (min-width: 768px) and (max-width: 1440px) { 
     .hidden-sm {
         display: none;
     }
@@ -477,6 +477,7 @@ footer {
         display: inline-flex;
         width: 100%;
         justify-content: space-between;
+        padding-top: 20px !important;
     }
 
     .__news_block {
@@ -512,12 +513,61 @@ footer {
     }   
 }
 
+
+.nav-donate-btn {
+    top: 14px;
+    position: relative;
+    // border-radius: 25px;
+    padding: 7px 25px;
+    background-color: #ffbe00;
+    color: white;
+    &:hover {
+        border: 1px solid #ffbe00;
+        background-color: white !important;
+        color: #ffbe00;
+        font-weight: 800;
+    }
+}
+
+
 @media (max-width:767px) {
     .__paragraph {
         font-size: 1.55rem !important;
     }   
     #about_us {
         padding-top: 10px;
+    }
+
+    .nav-donate-btn {
+        margin-left: 5px;
+        padding: 2px 10px;
+        height: 30px;
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    .navbar-header {
+        padding-left: 0;   
+        img {
+            max-width: 140px;
+        }
+    }
+    .navbar-brand.inner-link {
+        padding: 2px 5px;
+    }
+    .__header_link {
+        a:nth-child(2) {
+            height: 54px;
+            padding-top: 5px;
+            margin-left: 8px;
+            margin-right: 8px;
+            img {
+                width: 20px;
+                height: 25px;
+            }
+        }
+    }
+    .navbar-toggle {
+        margin-top: 10px;
     }
 }
 

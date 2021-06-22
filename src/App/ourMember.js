@@ -178,7 +178,7 @@ const members = [
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
             },
             {
-                "img": require("./members/8-6.jpg"),
+                "img": require("./members/8-6.jpeg"),
                 "title": "龍邑工程顧問",
                 "description": "",
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,

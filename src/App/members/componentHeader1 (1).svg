@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="107" viewBox="0 0 375 107">
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <path d="M0 0H375V107H0z"/>
+            <g fill="#EDEDED">
+                <path d="M0 0H334V1H0z" transform="translate(20.000000, 106.000000)"/>
+            </g>
+            <g fill="#000" font-family="Helvetica-Bold, Helvetica" font-size="23" font-weight="bold">
+                <text transform="translate(20.000000, 52.000000)">
+                    <tspan x="0" y="37">New collection</tspan>
+                </text>
+            </g>
+            <g fill="#000">
+                <path fill-rule="nonzero" d="M17.586 11l-4.293-4.293c-.39-.39-.39-1.024 0-1.414.39-.39 1.024-.39 1.414 0l6 6c.39.39.39 1.024 0 1.414l-6 6c-.39.39-1.024.39-1.414 0-.39-.39-.39-1.024 0-1.414L17.586 13H4c-.552 0-1-.448-1-1s.448-1 1-1h13.586z" transform="translate(19.000000, 30.000000) translate(12.000000, 12.000000) scale(-1, 1) translate(-12.000000, -12.000000)"/>
+            </g>
+        </g>
+    </g>
+</svg>
