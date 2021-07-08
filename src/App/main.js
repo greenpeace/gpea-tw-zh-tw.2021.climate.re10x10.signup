@@ -283,6 +283,7 @@ const initForm = () => {
             $(".form-block").hide();
             $(".thank-you-block").removeClass("hidden");
             $(".thank-you-words").html("系統將自動發送公民手冊至您的電子信箱．")
+            sendPetitionTracking('2021-climate-re10x10');
             if (response.ok) {
                 return response.json()
             } 
@@ -425,6 +426,9 @@ async function addEnterprise () {
         let ipRes = await axios.get("https://api.ipify.org?format=json");
         let ip = ipRes.data.ip;
 
+        const urlParams = new URLSearchParams(window.location.search);
+        const utm_source = urlParams.get("utm_source") || "";
+
         let postData = {
             "rows": [
                 {
@@ -436,7 +440,8 @@ async function addEnterprise () {
                     "contact_email": data.entContactPosition,
                     "knowledge": data.entKnowledge,
                     "receive_news": $("#ent-optin").prop("checked"),
-                    "created_at": dayjs().format("YYYY-MM-DD HH:mm:ss")
+                    "created_at": dayjs().format("YYYY-MM-DD HH:mm:ss"),
+                    "utm_source": utm_source,
                 }
             ]
         }

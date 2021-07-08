@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/css/main.00ce1a37.chunk.css",
-    "main.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.94643139.chunk.js",
-    "main.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.94643139.chunk.js.map",
+    "main.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.8031cd0c.chunk.js",
+    "main.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.8031cd0c.chunk.js.map",
     "runtime-main.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/runtime-main.bf4ee79b.js",
     "runtime-main.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/runtime-main.bf4ee79b.js.map",
     "static/js/2.740c3f53.chunk.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.740c3f53.chunk.js",
     "static/js/2.740c3f53.chunk.js.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.740c3f53.chunk.js.map",
     "index.html": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/index.html",
-    "precache-manifest.3b40e99bd3cf024e3acf0bf821db3d0b.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/precache-manifest.3b40e99bd3cf024e3acf0bf821db3d0b.js",
+    "precache-manifest.4ffd0bd84bde731cb7423314348af936.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/precache-manifest.4ffd0bd84bde731cb7423314348af936.js",
     "service-worker.js": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/service-worker.js",
     "static/css/main.00ce1a37.chunk.css.map": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/css/main.00ce1a37.chunk.css.map",
     "static/js/2.740c3f53.chunk.js.LICENSE.txt": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.740c3f53.chunk.js.LICENSE.txt",
@@ -50,6 +50,6 @@
     "static/js/runtime-main.bf4ee79b.js",
     "static/js/2.740c3f53.chunk.js",
     "static/css/main.00ce1a37.chunk.css",
-    "static/js/main.94643139.chunk.js"
+    "static/js/main.8031cd0c.chunk.js"
   ]
 }
