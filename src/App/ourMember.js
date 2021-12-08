@@ -1,14 +1,20 @@
 const members = [
     {
         "index": 0,
-        "name": "電信",
+        "name": "電信網通",
         "data": [
             {
                 "img": require("./members/1-1.jpg"),
                 "title": "台灣大哥大股份有限公司",
                 "description": "以「Open Possible 能所不能」為品牌精神，透過想像力、科技力、行動力、連結力，與感動力，讓用戶能所不能",
                 "goal": `致力於 <span class="item-year">2040</span> 年使用 <span class="item-percent">100%</span> 綠電`,
-            }
+            },
+            {
+                "img": require("./members/1-2.jpg"),
+                "title": "耀登科技股份有限公司",
+                "description": "耀登集團提供全方位一站式的設計與開發服務，以通訊技術為根基，進行跨領域的擴展及服務整合，在5G網通產業佔據領先地位。",
+                "goal": `致力於 <span class="item-year">2035</span> 年使用 <span class="item-percent">100%</span> 綠電`,
+            },
         ]
     },
     {
@@ -278,6 +284,48 @@ const members = [
                 "title": "E-SENSE 逸盛科技股份有限公司",
                 "description": "逸盛科技長期關心環境議題，我們選用對環境較為友善的材質及符合環保要求的包裝材料",
                 "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
+            }
+        ]
+    },
+    {
+        "index": 13,
+        "name": "電商",
+        "data": [
+            {
+                "img": require("./members/11-1.jpg"),
+                "title": "富國數位媒體科技股份有限公司",
+                "description": "這次我們與地球站在一起。化身樹人；購買“ 低 / 零 / 負碳 ”標籤商品，即從排碳者轉化成減碳者；成為地球的守護者。",
+                "goal": ``,
+            },
+            {
+                "img": require("./members/11-2.jpg"),
+                "title": "島語生活有限公司",
+                "description": "",
+                "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
+            }
+        ]
+    },
+    {
+        "index": 14,
+        "name": "出口貿易",
+        "data": [
+            {
+                "img": require("./members/12-1.jpg"),
+                "title": "億暉實業股份有限公司",
+                "description": "",
+                "goal": ` <span class="item-year">2025</span> 年使用 <span class="item-percent">10%</span> 綠電`,
+            }
+        ]
+    },
+    {
+        "index": 15,
+        "name": "能源",
+        "data": [
+            {
+                "img": require("./members/13-1.jpg"),
+                "title": "亞福儲能股份有限公司",
+                "description": "致力於建立一個被高度信賴的企業典範，發展安全、環保的新儲能技術，成為能源產業的最佳合作夥伴。",
+                "goal": ` 2023年5%, 2025年10%, 2050年100% 綠電`,
             }
         ]
     }
