@@ -1,3 +1,4 @@
+
 import "./main.scss";
 const dayjs = require("dayjs");
 const axios = require("axios");
@@ -16,43 +17,73 @@ window.directTo = function (url) {
 const memberList = require("./ourMember");
 
 window.showSlider = function (evt, index) {
-  $(".square-btn").removeClass("active");
-  $(evt).addClass("active");
+  // if($(evt).hasClass('active')){
+  //   $(".square-btn").removeClass("active");
+  //   $('#tab-all').click();
+  // }else{
+  //   $(".square-btn").removeClass("active");
+  //   $(evt).addClass("active");
+  //   $('#type_title span').text($(evt).text());
+  // }
+  // console.log($(evt).text())
+  
   //console.log($(evt).text());
-  $('#type_title span').text($(evt).text());
+  
 };
 
+let perPage = $(window).width() > 1024 ? 12 : 9;
 function renderMemberList() {
   let btnHTML = ``;
   let owlCarouselHTML = ``;
   let mobileOwlCarouselHTML = ``;
-
+  $("#square-btn-container").html(btnHTML);
+  $("#owl-our-members-container").html(owlCarouselHTML);
+  $("#mobile-owl-our-members").html(mobileOwlCarouselHTML);
+  let allMembers = [];
+  btnHTML += `
+  <a class="square-btn btn __paragraph active" id="tab-all" style="display:none;" href="#square-btn-tab-all" aria-controls="square-btn-tab-all" role="tab" data-toggle="tab" onclick="showSlider(this, 'all')">全部產業別</a>
+  `;
   for (let i of memberList) {
     console.log(i.name);
     btnHTML += `
-            <a class="square-btn btn __paragraph ${
-              i.index === 0 ? "active" : ""
-            }" href="#square-btn-tab-${
+            <a class="square-btn btn __paragraph" href="#square-btn-tab-${
       i.index
     }" aria-controls="square-btn-tab-${
       i.index
     }" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
         `;
 
-    owlCarouselHTML += `<div role="tabpanel" class="tab-pane ${
-      i.index === 0 ? "active" : ""
-    }" id="square-btn-tab-${i.index}">
-        <div class="__navigation_left __navigation_left-${i.index}">
+    owlCarouselHTML += `<div role="tabpanel" class="tab-pane" id="square-btn-tab-${i.index}">
+        <!--div class="__navigation_left __navigation_left-${i.index}">
             <h4><i class='fa fa-angle-left'></i></h4>
         </div>
         <div class="__navigation_right __navigation_right-${i.index}">
             <h4><i class='fa fa-angle-right'></i></h4>
-        </div>
+        </div-->
         <div class="owl-carousel owl-theme owl-our-members" id="owl-carousel-card-${
           i.index
         }">`;
-
-    for (let d of i.data) {
+      for (let d of i.data) {
+        d.cate = i.name;
+        allMembers.push(d);
+        mobileOwlCarouselHTML += `
+            <div class="item">
+                <div class="owl-item-type">${i.name}</div>
+                <div class="owl-item-img">
+                    <img src="${d.img}" alt="">
+                </div>
+                <div class="owl-item-title">
+                    ${d.title}
+                </div>
+                <div class="owl-item-description">
+                    <p>${d.description}</p>
+                </div>
+                <div class="owl-item-footer">
+                ${d.goal}
+                </div>
+            </div>`;
+      }
+    /*for (let d of i.data) {
       mobileOwlCarouselHTML += `
             <div class="item">
                 <div class="owl-item-type">${i.name}</div>
@@ -86,10 +117,35 @@ function renderMemberList() {
                     ${d.goal}
                     </div>
                 </div>`;
-    }
+      
+      allMembers += `
+                <div class="item">
+                    <div class="owl-item-type">${i.name}</div>
+                    <div class="owl-item-img">
+                        <img src="${d.img}" alt="">
+                    </div>
+                    <div class="owl-item-title">
+                        ${d.title}
+                    </div>
+                    <div class="owl-item-description">
+                        <p>${d.description}</p>
+                    </div>
+                    <div class="owl-item-footer">
+                    ${d.goal}
+                    </div>
+                </div>`;
+    }*/
 
-    owlCarouselHTML += "</div></div>";
+    owlCarouselHTML += `</div><div class="member-pagi" id="pagination-${i.index}"></div></div>`;
   }
+  owlCarouselHTML += `<div role="tabpanel" class="tab-pane active" id="square-btn-tab-all">
+      <!--div class="__navigation_left __navigation_left-all">
+          <h4><i class='fa fa-angle-left'></i></h4>
+      </div>
+      <div class="__navigation_right __navigation_right-all">
+          <h4><i class='fa fa-angle-right'></i></h4>
+      </div-->
+      <div class="owl-carousel owl-theme owl-our-members" id="owl-carousel-card-all"></div><div class="member-pagi" id="pagination-all"></div></div>`;
 
   $("#square-btn-container").html(btnHTML);
   $("#owl-our-members-container").html(owlCarouselHTML);
@@ -97,33 +153,133 @@ function renderMemberList() {
   $(`#mobile-owl-our-members`).owlCarousel({
     items: 1,
     pagination: false,
+    afterInit: countCaroysel,
+    afterMove: countCaroysel
   });
-  let owlMobile = $(`#mobile-owl-our-members`).data("owlCarousel");
-  $(`.__navigation_right_mobile`).click(function () {
-    owlMobile.next();
-  });
-
-  $(`.__navigation_left_mobile`).click(function () {
-    owlMobile.prev();
-  });
-
-  for (let i of memberList) {
-    $(`#owl-carousel-card-${i.index}`).owlCarousel({
-      items: 4,
-      itemsDesktop: [1440, 4],
-      pagination: false,
-    });
-
-    let owl = $(`#owl-carousel-card-${i.index}`).data("owlCarousel");
-
-    $(`.__navigation_right-${i.index}`).click(function () {
-      owl.next();
-    });
-
-    $(`.__navigation_left-${i.index}`).click(function () {
-      owl.prev();
-    });
+  function countCaroysel(e){
+    $('#mb-our-members-count').text(`${this.currentItem+1}/${this.itemsAmount}`);
   }
+  // let owlMobile = $(`#mobile-owl-our-members`).data("owlCarousel");
+  // console.log(owlMobile)
+  // $(`.__navigation_right_mobile`).click(function () {
+  //   owlMobile.next();
+  // });
+
+  // $(`.__navigation_left_mobile`).click(function () {
+  //   owlMobile.prev();
+  // });
+  
+  
+  let pagiOptions = {
+    pageSize: perPage,
+    pageRange: 1,
+    prevText: '',
+    nextText: '',
+    ellipsisText: '⋯',
+  }
+  for(let i = 0; i < memberList.length+1; i++){
+    if(i < memberList.length){
+      $('#pagination-' + i).pagination({
+        dataSource: memberList[i].data,
+        pageSize: pagiOptions.pageSize,
+        pageRange: pagiOptions.pageRange,
+        prevText: pagiOptions.prevText,
+        nextText: pagiOptions.nextText,
+        ellipsisText: pagiOptions.ellipsisText,
+        callback: function(data, pagination) {
+          var dataHtml = '';
+          $.each(data, function (index, d) {
+            dataHtml += `
+            <div class="item">
+                <div class="owl-item-type">${memberList[i].name}</div>
+                <div class="owl-item-img">
+                    <img src="${d.img}" alt="">
+                </div>
+                <div class="owl-item-title">
+                    ${d.title}
+                </div>
+                <div class="owl-item-description">
+                    <p>${d.description}</p>
+                </div>
+                <div class="owl-item-footer">
+                ${d.goal}
+                </div>
+            </div>`;
+          });
+          $('#owl-carousel-card-' + i).html(dataHtml);
+        },
+        afterInit: function(){
+          if($('#pagination-' + i).pagination('getTotalPage') <= 1){
+            $('#pagination-' + i).css('opacity',0);
+          }
+          $(window).one('clear', function(){
+            $('#pagination-' + i).pagination('destroy');
+          });
+        }
+      })
+      $('#pagination-' + i).addHook('beforePaging',function(){
+        $('html, body').animate({scrollTop: $('#type_title').offset().top - $('.navbar').height()});
+      });
+    }else{
+      $('#pagination-all').pagination({
+        dataSource: allMembers,
+        pageSize: pagiOptions.pageSize,
+        pageRange: pagiOptions.pageRange,
+        prevText: pagiOptions.prevText,
+        nextText: pagiOptions.nextText,
+        ellipsisText: pagiOptions.ellipsisText,
+        callback: function(data, pagination) {
+          var dataHtml = '';
+          $.each(data, function (index, d) {
+            dataHtml += `
+            <div class="item">
+                <div class="owl-item-type">${d.cate}</div>
+                <div class="owl-item-img">
+                    <img src="${d.img}" alt="">
+                </div>
+                <div class="owl-item-title">
+                    ${d.title}
+                </div>
+                <div class="owl-item-description">
+                    <p>${d.description}</p>
+                </div>
+                <div class="owl-item-footer">
+                ${d.goal}
+                </div>
+            </div>`;
+          });
+          $('#owl-carousel-card-all').html(dataHtml);
+        },
+        afterInit: function(){
+          $(window).one('clear', function(){
+            $('#pagination-all').pagination('destroy');
+          });
+        },
+      });
+      $('#pagination-all').addHook('beforePaging',function(){
+        $('html, body').animate({scrollTop: $('#type_title').offset().top - $('.navbar').height()});
+      });
+    }
+  }
+  // for (let i of memberList) {
+  //   $(`#owl-carousel-card-${i.index}`).owlCarousel({
+  //     items: 4,
+  //     itemsDesktop: [1440, 4],
+  //     pagination: false,
+  //   });
+
+  //   let owl = $(`#owl-carousel-card-${i.index}`).data("owlCarousel");
+
+  //   $(`.__navigation_right-${i.index}`).click(function () {
+  //     owl.next();
+  //   });
+
+  //   $(`.__navigation_left-${i.index}`).click(function () {
+  //     owl.prev();
+  //   });
+  // }
+
+  
 }
 
 $(document).ready(function () {
@@ -147,6 +303,30 @@ $(document).ready(function () {
   initForm();
   checkEmail();
   init();
+  $(document).on('click', '.square-btn', function(e){
+    console.log('click tab')
+    if($(this).hasClass('active')){
+      $(".square-btn").removeClass("active");
+      $('#tab-all').click();
+      e.stopPropagation();
+    }else{
+      $(".square-btn").removeClass("active");
+      $(this).addClass("active");
+      $('#type_title span#cate-name').text($(this).text());
+    }
+  });
+  $(window).on('resize', function(){
+    if($(window).width() > 1024 && perPage != 12){
+      perPage = 12;
+      $(window).trigger('clear');
+      renderMemberList();
+    }else if($(window).width() <= 1024 && perPage != 9){
+      perPage = 9;
+      $(window).trigger('clear');
+      renderMemberList();
+    }
+
+  });
 });
 
 function createYearOptions() {

@@ -55,7 +55,7 @@ const members = [
                 "img": require("./members/3-3.jpg"),
                 "title": "茶籽堂_捷順企業股份有限公司",
                 "description": "臺灣在地洗沐品牌，臺灣苦茶油文化、苦茶樹契作與新植計畫品",
-                "goal": `<span class="item-year"></span>`,
+                "goal": `發展地方社區能源永續計畫，<br>讓企業與社區能源自主`,
             },
             {
                 "img": require("./members/3-4.jpg"),
@@ -68,6 +68,18 @@ const members = [
                 "title": "綠藤生物科技股份有限公司",
                 "description": "以「 讓一個更真實、更健康的永續生活型態發芽」為品牌使命，產品創新結合理念推廣，帶動正向的實質改變",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/3-6.jpg"),
+                "title": "台灣屈臣氏個人用品商店股份有限公司",
+                "description": "屈臣氏為健康美麗零售領導品牌，提供個人化的諮詢及建議、最多元的產品種類，使顧客每天都能LOOK GOOD, DO GOOD, FEEL GREAT。",
+                "goal": `門市平均每坪用電量(度數)，<br><span class="item-year">2025</span> 年與2015年相比，減少30%`,
+            },
+            {
+                "img": require("./members/3-7.jpg"),
+                "title": "淨毒五郎有限公司",
+                "description": "淨毒五郎自 2015 年成立，希望提供從原料到包裝都對人體及環境友善的家用清潔產品，透過品牌影響力推廣減塑環保，一步一步喚醒大眾對於居家清潔洗劑的關注。",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
             }
         ]
     },
@@ -146,6 +158,24 @@ const members = [
                 "title": "穩譚科技股份有限公司",
                 "description": "致力研發全球首款植物滅火藥劑，不只能有效滅火保障安全同時也保護環境，實現綠色消防時代",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/7-4.jpg"),
+                "title": "盈松環保股份有限公司",
+                "description": "盈松環保股份有限公司為生產木質包裝材(木棧板、木箱)之業者,自 2017 年起採購多套生質能氣化發電設備,計畫將廠內之木質廢棄物與下腳料投入產電,落實循環經濟,達到綠電自產自用之計畫。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/white.jpg"),
+                "title": "全傑橡膠股份有限公司",
+                "description": "",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/7-5.jpg"),
+                "title": "緯凱工業有限公司",
+                "description": "緯凱工業有限公司成立於1995年，創辦人於一開始即鎖定精密模具製造、射出。秉持一條龍生產，從產品設計、模具開發到試模量產。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -153,12 +183,12 @@ const members = [
         "index": 8,
         "name": "顧問與專業服務",
         "data": [
-            {
-                "img": require("./members/8-1.jpg"),
-                "title": "CircuPlus",
-                "description": "",
-                "goal": `<span class="item-year"></span>`,
-            },
+            // {
+            //     "img": require("./members/8-1.jpg"),
+            //     "title": "CircuPlus",
+            //     "description": "",
+            //     "goal": `<span class="item-year"></span>`,
+            // },
             {
                 "img": require("./members/8-2.jpg"),
                 "title": "CSRone 頤德國際股份有限公司",
@@ -206,6 +236,12 @@ const members = [
                 "title": "鴻元工程顧問有限公司",
                 "description": "太陽光電工程規劃與設計，打造「綠色奇蹟，陽光變現金」",
                 "goal": `<span class="item-year">2035</span> 年使用 <br> <span class="item-percent">50% 綠電</span>`,
+            },
+            {
+                "img": require("./members/8-10.jpg"),
+                "title": "InfoLink 英富霖諮詢有限公司",
+                "description": "InfoLink Consulting 為全球領先的新能源與科技研究顧問公司，提供產業分析、策略規劃與顧問服務，協助企業獲得競爭優勢。",
+                "goal": `<span class="item-year">2025</span> 年前使用50%綠電，<br><span class="item-year">2030</span> 年100%`,
             }
         ]
     },
@@ -253,7 +289,7 @@ const members = [
                 "img": require("./members/9-8.jpg"),
                 "title": "博仲法律事務所",
                 "description": "以智慧財產權見長的全方位律師事務所，於 2017 年成為亞洲第一家獲得B型企業認證的法律事務所，並已經於 2020 年達成碳中和目標",
-                "goal": `已於 <span class="item-year">2020</span> 年達成碳中和目標`,
+                "goal": `已於 <span class="item-year">2020</span> 年達成碳中和`,
             },
             {
                 "img": require("./members/white.jpg"),
@@ -284,6 +320,19 @@ const members = [
                 "title": "E-SENSE 逸盛科技股份有限公司",
                 "description": "逸盛科技長期關心環境議題，我們選用對環境較為友善的材質及符合環保要求的包裝材料",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/10-2.jpg"),
+                "title": "研華科技股份有限公司",
+                "description": "研華為物聯網智能系統與嵌入式平台產業之全球領導廠商，並以「智能地球的推手」作為企業品牌願景。",
+                "goal": `<span class="item-year">2026</span> 年使用50%綠電 <br> <span class="item-year">2032</span> 年使用100%綠電(台灣)`,
+                
+            },
+            {
+                "img": require("./members/10-3.jpg"),
+                "title": "群聯電子股份有限公司",
+                "description": "群聯電子於2000年11月成立於新竹。從提供全球首顆單晶片USB快閃記憶體隨身碟控制晶片起家，群聯目前已經成為USB隨身碟、SD記憶卡、eMMC、UFS、PATA、SATA與PCIe固態磁碟等控制晶片領域的領頭者。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -325,7 +374,67 @@ const members = [
                 "img": require("./members/13-1.jpg"),
                 "title": "亞福儲能股份有限公司",
                 "description": "建立一個被高度信賴的企業典範，發展安全、環保的新儲能技術，成為能源產業的最佳合作夥伴。",
-                "goal": ` 2023年5%, 2025年10%, 2050年100% 綠電`,
+                "goal": `2023年5%, 2025年10%, 2050年100% 綠電`,
+            },
+            {
+                "img": require("./members/13-2.jpg"),
+                "title": "宏威環球事業股份有限公司",
+                "description": "太陽人全民電廠致力於將民間力量導入能源轉型，透過綠能共享經濟與日光循環公益模式讓民眾輕鬆參與，達成永續與經濟的共贏。",
+                "goal": `<span class="item-year">2030</span> 年前使用 <br> <span class="item-percent">100% 綠電</span>`,
+            },
+            {
+                "img": require("./members/13-3.jpg"),
+                "title": "森崴能源股份有限公司",
+                "description": "森崴能源為正崴集團子公司，以保護地球、永續發展、綠能減碳、潔淨能源為核心價值與願景，擁有近二十年經驗的專業能源工程技術整合團隊．致力於再生能源與潔淨能源服務與技術發展。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/13-4.jpg"),
+                "title": "富堡能源股份有限公司",
+                "description": "富堡能源為一家專業生產燃料電池的公司。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            }
+        ]
+    },
+    {
+        "index": 16,
+        "name": "建築",
+        "data": [
+            {
+                "img": require("./members/16-1.jpg"),
+                "title": "菁鏈科技股份有限公司(本住)",
+                "description": "菁鏈科技(本住)，成立於2019年，專注於再生能源和系統整合，打造永續建築與空間。以人為本，與地球和諧相處。",
+                "goal": `要求我司合作夥伴、供應鏈<br>也使用一定比例的綠電`,
+            }
+        ]
+    },
+    {
+        "index": 17,
+        "name": "半導體",
+        "data": [
+            {
+                "img": require("./members/17-1.jpg"),
+                "title": "新加坡商安富利股份有限公司台灣分公司",
+                "description": "安富利成立於1921年，總部設立在美國亞利桑那州鳳凰城，於美國納斯達克(NASDAQ)證券交易所上市。作為全球領先的技術分銷商和解決方案提供商的我們，在過去一個世紀裡一直秉持初心，滿足客戶不斷變化的需求。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            }
+        ]
+    },
+    {
+        "index": 18,
+        "name": "生技",
+        "data": [
+            {
+                "img": require("./members/18-1.jpg"),
+                "title": "京冠生物科技股份有限公司",
+                "description": "京冠結合在地農產業，將農食副產物(豆渣、咖啡渣、蘿蔔廢料等)以生物科技製程創造循環經濟價值，應用於動物機能性飼料添加劑及妝品、保健食品、植物新藥的原料供應。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/white.jpg"),
+                "title": "台江生技股份有限公司",
+                "description": "",
+                "goal": `<span class="item-year">2030</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
             }
         ]
     }
