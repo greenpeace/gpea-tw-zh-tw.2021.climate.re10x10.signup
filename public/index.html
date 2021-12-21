@@ -11,7 +11,7 @@
 	<title>RE10x10 企業綠電倡議計畫｜Greenpeace 綠色和平</title>
 	<meta name="description" content="RE10x10 是由環境組織 Greenpeace 綠色和平發起臺灣的企業綠電倡議計畫，響應企業需承諾 2025 年至少達成總用電量 10% 的綠電使用，並致力邁向 2050 年 100% RE（再生能源）。">
 	<meta name="keywords" content="Greenpeace" />
-
+	<meta name="format-detection" content="telephone=no" />
 	<meta property="og:site_name" content="Greenpeace">
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="RE10x10 企業綠電倡議計畫｜Greenpeace 綠色和平">
@@ -135,7 +135,7 @@
 		<div class="container-fluid navigation-menu">
 			<div class="row">
 				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="col-sm-3 navbar-header">
+				<div class="col-lg-3 navbar-header">
 					<button type="button" class="navbar-toggle no-border-round collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 						<span class="sr-only">Toggle navigation</span>
 						<span class="icon-bar"></span>
@@ -285,11 +285,11 @@
 				<div class="col-xs-12 no-padding architecture-title cover-background overflow-hidden" style="margin-top:30px; background-image:url('%PUBLIC_URL%/images/RE10x10_about-02-min.jpg');"></div>
 			</div>
 		</div>
-		<div class="container-fluid">
+		<div class="container-fluid" id="our_and_about">
 			<div class="row">
 				<!-- tab -->
-				<div class="col-sm-6 architecture-title tab-style-3 __tab_changing">
-					<div class="col-sm-10 col-sm-offset-1 architecture-section no-padding-lr md-margin-five md-no-margin-tb xs-no-padding-top">
+				<div class="col-sm-12 architecture-title tab-style-3 __tab_changing">
+					<div class="col-lg-10 col-lg-offset-1 architecture-section no-padding-lr md-margin-five md-no-margin-tb xs-no-padding-top">
 						<!-- tab navigation -->
 						<ul class="nav nav-tabs alt-font text-uppercase letter-spacing-1 no-border font-weight-600 __slider-tab-nav" role="tablist">
 							<li role="presentation"
@@ -303,7 +303,7 @@
 							
 						</ul>
 						<!-- end tab navigation -->
-						<div class="tab-content clearfix margin-twenty no-margin-lr no-margin-bottom sm-margin-nine sm-no-margin-lr sm-no-margin-bottom">
+						<div class="tab-content clearfix margin-twenty no-margin-lr no-margin-bottom sm-no-margin-lr sm-no-margin-bottom">
 							<!-- tab item -->
 							<div role="tabpanel" class="tab-pane fade in" id="about_us">
 								<div class="col-md-12 col-sm-12 no-padding">
@@ -315,48 +315,91 @@
 									</p>
 								</div>
 							</div>
+							
+								
 							<!-- end tab item -->
 							<!-- tab item -->
 							<div role="tabpanel" class="tab-pane fade in active" id="our_member">
-								<div class="hidden-xs col-md-12 col-sm-12 no-padding" id="square-btn-container">
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn active">紡織</button>
+								<div class="our-member-top">
+									<div class="hidden-xs our_member_title">
+										全部產業別
 									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">紡織</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">美妝與清潔品零售</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">紡織</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">美妝與清潔品零售</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">紡織</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">美妝與清潔品零售</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">紡織</button>
-									</div>
-									<div class="col-sm-4 padding-two no-padding-left">
-										<button class="square-btn">美妝與清潔品零售</button>
+									<div class="hidden-xs no-padding" id="square-btn-container">
+										<div class="padding-two no-padding-left">
+											<button class="square-btn active">紡織</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">紡織</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">美妝與清潔品零售</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">紡織</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">美妝與清潔品零售</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">紡織</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">美妝與清潔品零售</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">紡織</button>
+										</div>
+										<div class="padding-two no-padding-left">
+											<button class="square-btn">美妝與清潔品零售</button>
+										</div>
 									</div>
 								</div>
-								<div class="visible-xs row">
-									<div class="__navigation_left __navigation_left_mobile">
-										<h4><i class='fa fa-angle-left'></i></h4>
+								
+								<div class="architecture-title tab-style-3 __tab_changing no-padding">
+									<div class="col-sm-10 architecture-section no-padding-lr md-no-margin-tb xs-no-padding-top">
+										<h3 id="type_title" class="owl-our-members-type-title"><span class="hidden-xs">類別：</span><span id="cate-name">所有響應企業</span><span class="visible-xs" id="mb-our-members-count"></span></h3>
+									</div>
+								</div>
+								<div class="visible-xs owl-our-members-mb-wrap">
+									<!-- <div class="__navigation_left __navigation_left_mobile">
+										<i class='fa fa-angle-left'></i>
 									</div>
 									<div class="__navigation_right __navigation_right_mobile">
-										<h4><i class='fa fa-angle-right'></i></h4>
-									</div>
+										<i class='fa fa-angle-right'></i>
+									</div> -->
 									<div id="mobile-owl-our-members" class="owl-carousel owl-theme owl-our-members">
 										
 									</div>	
+									<p class="text-center text-muted mt-5 lead">左右滑動查看更多</p>
+								</div>
+								<div class="hidden-xs col-sm-12 no-padding cover-background overflow-hidden __show-slider" style="display: none;">
+									
+									<div class="tab-content" id="owl-our-members-container">
+										<div role="tabpanel" class="tab-pane active" id="tab">
+											<div class="__navigation_left">
+												<h4><i class='fa fa-angle-left'></i></h4>
+											</div>
+											<div class="__navigation_right">
+												<h4><i class='fa fa-angle-right'></i></h4>
+											</div>
+											<div id="owl-our-members" class="owl-carousel owl-theme">
+												<div class="item">
+													<div class="owl-item-img">
+														<img src="" alt="">
+													</div>
+													<div class="owl-item-title">
+														<h4></h4>
+													</div>
+													<div class="owl-item-description">
+														<p></p>
+													</div>
+													<div class="owl-item-footer">
+														<span class="item-year"></span> 年完成 <span class="item-percent"></span>
+													</div>
+												</div>
+											</div>	
+										</div>
+									</div>
 								</div>
 							</div>
 							<!-- end tab item -->
@@ -365,35 +408,6 @@
 				</div>
 				<!-- end tab -->
 				<div class="hidden-xs col-sm-6 col-xs-12 no-padding architecture-title cover-background overflow-hidden __show-bg" style="background-image:url('%PUBLIC_URL%/images/RE10x10_about-02-min.jpg');"></div>
-				<div class="hidden-xs col-sm-7 col-xs-12 no-padding architecture-title cover-background overflow-hidden __show-slider" style="display: none;">
-					
-					<div class="tab-content" id="owl-our-members-container">
-						<div role="tabpanel" class="tab-pane active" id="tab">
-							<div class="__navigation_left">
-								<h4><i class='fa fa-angle-left'></i></h4>
-							</div>
-							<div class="__navigation_right">
-								<h4><i class='fa fa-angle-right'></i></h4>
-							</div>
-							<div id="owl-our-members" class="owl-carousel owl-theme">
-								<div class="item">
-									<div class="owl-item-img">
-										<img src="" alt="">
-									</div>
-									<div class="owl-item-title">
-										<h4></h4>
-									</div>
-									<div class="owl-item-description">
-										<p></p>
-									</div>
-									<div class="owl-item-footer">
-										<span class="item-year"></span> 年完成 <span class="item-percent"></span>
-									</div>
-								</div>
-							</div>	
-						</div>
-					</div>
-				</div>
 			</div>
 			<!-- <div class="row" style="margin: 25px;">
 				<div class="col-md-offset-3 col-md-3 col-sm-6 counter-style1 sm-no-border text-center border-right">
@@ -1079,6 +1093,8 @@
 	<script type="text/javascript" src="%PUBLIC_URL%/js/wow.min.js"></script>
 	<!-- page scroll -->
 	<!-- <script type="text/javascript" src="%PUBLIC_URL%/js/page-scroll.js"></script> -->
+	<!-- paginaion -->
+	<script type="text/javascript" src="%PUBLIC_URL%/js/pagination.min.js"></script>
 	<!-- owl carousel -->
 	<script type="text/javascript" src="%PUBLIC_URL%/js/owl.carousel.min.js"></script>
 	<!-- currency js -->
