@@ -472,7 +472,7 @@ const initForm = () => {
       let v = null;
       if (e.type === "checkbox") {
         // console.log(e)
-        v = $("#optin").prop("checked");
+        v = $("#userOptin").prop("checked");
       } else {
         v = e.value;
       }
