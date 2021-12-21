@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8ccfac543b0e9e14073ec07183c8be27",
+    "revision": "575ef737ed5342a84c73695897fdaf55",
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/index.html"
   },
   {
-    "revision": "5e66e7dd1e2879eaac93",
+    "revision": "00062dc658e4f137cbaf",
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/css/main.afb44593.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.2cfe3af5.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5e66e7dd1e2879eaac93",
-    "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.09caeb47.chunk.js"
+    "revision": "00062dc658e4f137cbaf",
+    "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.a42a2c09.chunk.js"
   },
   {
     "revision": "49c220662fba4b4a77cd",
