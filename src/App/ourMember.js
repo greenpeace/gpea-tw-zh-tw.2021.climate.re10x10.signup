@@ -15,6 +15,12 @@ const members = [
                 "description": "耀登集團提供全方位一站式的設計與開發服務，以通訊技術為根基，進行跨領域的擴展及服務整合，在5G網通產業佔據領先地位。",
                 "goal": `<span class="item-year">2035</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
             },
+            {
+                "img": require("./members/planet.jpg"),
+                "title": "普萊德科技股份有限公司",
+                "description": "以國際專業網通設備品牌製造商為定位，堅持不斷創新數位網路傳輸技術和設備，普萊德自有品牌 PLANET 版圖已遍及全球上百國。",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
         ]
     },
     {
@@ -32,12 +38,18 @@ const members = [
                 "title": "鎰呈行股份有限公司",
                 "description": "成立於 1997 年，臺灣績優布料製造商及 Neoprene 橡膠發泡廠",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/tuntex.jpg"),
+                "title": "東豐纖維企業股份有限公司",
+                "description": "具世界品質之織布、染整、成衣一貫作業，提供客戶全面專精服務之國際級標竿企業。<br>To be a Global Leader and Total Services Provider in the Textile and and Apparel Business.",
+                "goal": `<span class="item-year">2050</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
             }
         ]
     },
     {
         "index": 2,
-        "name": "美妝與清潔品零售",
+        "name": "百貨零售業",
         "data": [
             {
                 "img": require("./members/3-1.jpg"),
@@ -80,6 +92,24 @@ const members = [
                 "title": "淨毒五郎有限公司",
                 "description": "#對世界更友善的潔淨選擇<br>淨毒五郎自 2015 年成立，品牌創立初期，臺灣正被食安風暴籠罩，對於食物清潔、加工等問題日益重視，我們希望提供從原料到包裝都對人體及環境友善的家用清潔產品，一步一步喚醒大眾對於居家清潔洗劑的關注。<br><br>我們堅信：「有意識的消費行為，在能力所及的範圍，做對世界更友善的選擇。」在2021年，淨毒五郎正式取得B型企業認證，我們希望透過品牌影響力推廣減塑環保，支持綠色供應與環境保護行動，並向大眾溝通＆徹底實踐「重複使用」的永續足跡，不僅對生態、人體友善，更要與整個世界共好。",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
+            },
+            {
+                "img": require("./members/heineken.jpg"),
+                "title": "荷蘭商海尼根股份有限公司台灣分公司",
+                "description": "海尼根在台深耕超過 20年，現致力以消費者喜愛的品牌成為台灣第一名全球在地化的釀酒廠，追求永續、釀造更美好的世界。",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/mattress.jpg"),
+                "title": "滿庭芳床業有限公司",
+                "description": "「滿庭芳床業」於1985年10月1日成立，致力於彈簧床墊的研發製作生產，集研發、客製、代工、批發、直營為一體，一步一腳印深耕台灣，堅持產業不外移，是在地有口皆碑的老品牌。，<br><br>在過去35年來，滿庭芳床業堅持真材實料、以誠相待、愛護土地與優質睡眠的四大信念，帶領所有職員以製造高品質床墊提供國人健康舒適的睡眠。",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/jinmei.jpg"),
+                "title": "京麗國際股份有限公司",
+                "description": "京美產品以「在地」、「天然」、「無毒」的概念為出發，堅信只要擁有好的生活品質、創新的生活概念，便能引領國人更重視健康與機能。讓您「貼身更貼心」",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -97,12 +127,18 @@ const members = [
     },
     {
         "index": 4,
-        "name": "雲端科技",
+        "name": "軟體與網路科技",
         "data": [
             {
                 "img": require("./members/5-2.jpg"),
                 "title": "伊雲谷數位科技股份有限公司",
                 "description": "雲端服務商，透過建立雲端生態係，提供企業數位化的解決方案進而協助透過雲端進行轉型",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/eyesmobii.jpg"),
+                "title": "艾斯移動股份有限公司",
+                "description": "艾斯移動公司 2022 年取得國家再生能源售電執照，提供購電、創能、儲能、節能、碳盤查一站式綠電服務。目標於2023年底前完全使用再生能源發電！<br>艾斯移動以「綠色旅運」、「Ai賦能」、「循環減碳」三大方向，提供企業一站式綠能與智能整合數位轉型解決方案，運營「 Mobii綠色生活平台」， 串連「政府-企業-用戶」資源，提供客戶「降成本、增效益、助永續」的全新ESG聚合行銷模式。",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
@@ -176,6 +212,18 @@ const members = [
                 "title": "緯凱工業有限公司",
                 "description": "從智慧製造到永續綠能，專於噴頭、生技醫材等塑膠模具開發到無塵室塑膠射出成型，期待共好的路上有你我。",
                 "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/chinda.jpg"),
+                "title": "慶達科技股份有限公司",
+                "description": "專精於各類高階扣件生產與行銷，宣示 2025 年總電量 10% 使用綠電，以淨零碳排為目標，實現碳中和綠色轉型；提供客戶最純淨的品質與服務，打造企業與產業供應鏈的永續未來。",
+                "goal": `<span class="item-year">2050</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
+            },
+            {
+                "img": require("./members/superb.jpg"),
+                "title": "保忠精密工具股份有限公司",
+                "description": "創立於西元1998年，數十年來深根自行車產業，逐步從代工廠成長為國際知名品牌，致力於製造最符合人體工學的工具，也希望為下一代創造最適合生活的土地。",
+                "goal": `<span class="item-year">2022</span> 年前購置 10% 綠電，<br>並於 <span class="item-year">2035</span> 年達成 100% 綠電`,
             }
         ]
     },

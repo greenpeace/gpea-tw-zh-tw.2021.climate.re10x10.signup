@@ -284,6 +284,10 @@ function renderMemberList() {
 
 $(document).ready(function () {
   console.log("ready!");
+  // set news number
+  $('.__news_no').each(function(index, item){
+    $(this).text('0' + (index+1));
+  });
   $("._show-bg").click(function () {
     $(".__show-bg").fadeIn();
     $(".__show-slider").hide();
