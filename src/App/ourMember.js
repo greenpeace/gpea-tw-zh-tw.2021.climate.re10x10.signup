@@ -49,7 +49,7 @@ const members = [
     },
     {
         "index": 2,
-        "name": "百貨零售業",
+        "name": "零售與電商",
         "data": [
             {
                 "img": require("./members/3-1.jpg"),
@@ -109,6 +109,18 @@ const members = [
                 "img": require("./members/jinmei.jpg"),
                 "title": "京麗國際股份有限公司",
                 "description": "京美產品以「在地」、「天然」、「無毒」的概念為出發，堅信只要擁有好的生活品質、創新的生活概念，便能引領國人更重視健康與機能。讓您「貼身更貼心」",
+                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/11-1.jpg"),
+                "title": "富國數位媒體科技股份有限公司",
+                "description": "這次我們與地球站在一起。化身樹人；購買“ 低 / 零 / 負碳 ”標籤商品，即從排碳者轉化成減碳者；成為地球的守護者。",
+                "goal": ``,
+            },
+            {
+                "img": require("./members/11-2.jpg"),
+                "title": "島語生活有限公司",
+                "description": "",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
@@ -196,12 +208,6 @@ const members = [
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
-                "img": require("./members/7-4.jpg"),
-                "title": "盈松環保股份有限公司",
-                "description": "盈松環保股份有限公司為生產木質包裝材(木棧板、木箱)之業者,自 2017 年起採購多套生質能氣化發電設備,計畫將廠內之木質廢棄物與下腳料投入產電,落實循環經濟,達到綠電自產自用之計畫。",
-                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
-            },
-            {
                 "img": require("./members/white.jpg"),
                 "title": "全傑橡膠股份有限公司",
                 "description": "",
@@ -224,7 +230,23 @@ const members = [
                 "title": "保忠精密工具股份有限公司",
                 "description": "創立於西元1998年，數十年來深根自行車產業，逐步從代工廠成長為國際知名品牌，致力於製造最符合人體工學的工具，也希望為下一代創造最適合生活的土地。",
                 "goal": `<span class="item-year">2022</span> 年前購置 10% 綠電，<br>並於 <span class="item-year">2035</span> 年達成 100% 綠電`,
-            }
+            },
+            {
+                "img": require("./members/jmg.jpg"),
+                "title": "錦明實業股份有限公司",
+                "description": `自1987年創立以來35年間，錦明實業對於提供更好的服務內容不遺餘力，始終堅持以慇懃態度、服務精神，用心對待每一位客戶。錦明致力於以下各點
+                <br>「專注品質」技術為本、誠信為要，高標自我要求，超越客戶需求。
+                <br>「使命必達」全新創造客戶價值，共建不凡，成就雙贏。
+                <br>「持續創新」領導技術開發，接軌市場變化。
+                `,
+                "goal": `以廠房太陽能自發自用達成 <br><span class="item-year">2025</span> 年占比 15% 綠電目標`,
+            },
+            {
+                "img": require("./members/evergood.jpg"),
+                "title": "永佳環球有限公司",
+                "description": "成立於2003年，為台灣第一家獲得COSMOS有機驗證的化粧品專業研發製造的公司，致力於維護生物多樣性與環境永續性。",
+                "goal": `<span class="item-year">2021</span> 綠電佔比 54% ，<br>並於 <span class="item-year">2025</span> 年達成 70% 綠電`,
+            },
         ]
     },
     {
@@ -302,13 +324,7 @@ const members = [
                 "title": "恩瀛企業有限公司（台灣潛水）",
                 "description": "兩岸三地唯一擁有白金課程總監的五星職業發展中心，宗旨為「Bring Ocean Into Your Life」，藉由潛水，讓更多人愛上大海、一起保護大海",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
-            },
-            {
-                "img": require("./members/9-4.jpg"),
-                "title": "嘉瓦士有限公司",
-                "description": "小型獨立戶外品牌， 設計更好的戶外裝備，希望透過品牌的力量邀請大家共享戶外的美好",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
-            },
+            }
         ]
     },
     {
@@ -349,7 +365,7 @@ const members = [
     },
     {
         "index": 11,
-        "name": "工會與基金會",
+        "name": "非營利組織",
         "data": [
             {
                 "img": require("./members/9-2.jpg"),
@@ -386,20 +402,14 @@ const members = [
     },
     {
         "index": 13,
-        "name": "電商",
+        "name": "百貨零售業",
         "data": [
             {
-                "img": require("./members/11-1.jpg"),
-                "title": "富國數位媒體科技股份有限公司",
-                "description": "這次我們與地球站在一起。化身樹人；購買“ 低 / 零 / 負碳 ”標籤商品，即從排碳者轉化成減碳者；成為地球的守護者。",
-                "goal": ``,
-            },
-            {
-                "img": require("./members/11-2.jpg"),
-                "title": "島語生活有限公司",
-                "description": "",
+                "img": require("./members/9-4.jpg"),
+                "title": "嘉瓦士有限公司",
+                "description": "小型獨立戶外品牌， 設計更好的戶外裝備，希望透過品牌的力量邀請大家共享戶外的美好",
                 "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
-            }
+            },
         ]
     },
     {
@@ -441,6 +451,12 @@ const members = [
                 "title": "富堡能源股份有限公司",
                 "description": "富堡能源為一家專業生產燃料電池的公司。",
                 "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/hwantai-solar.jpg"),
+                "title": "環台光電股份有限公司",
+                "description": "我們為專業太陽能投資建置商，以綠色能源為志業，從光電規劃投資至施工營運，目標2030年達到200MW的規模，為地球永續盡一份力。",
+                "goal": `預計於 <span class="item-year">2025</span> 年使用 50% 綠電，<br>逐年增加，於2030年達成100%綠電。</span>`,
             }
         ]
     },
@@ -465,6 +481,18 @@ const members = [
                 "title": "新加坡商安富利股份有限公司台灣分公司",
                 "description": "安富利是全球領先的科技分銷商與解決方案供應商。安富利的全體同仁專注落實環境永續的經營實務，藉此回饋社會並貢獻全球，其中包括了改善能源使用效益、改採再生能源等，具體降低企業碳足跡。",
                 "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/chyiding.jpg"),
+                "title": "奇鼎科技股份有限公司",
+                "description": "2003年創立，為半導體製程環境溫濕度、潔淨度控制與AMC去除製造設備；提供節能規劃，已為客戶節省十億元電費。",
+                "goal": `<span class="item-year">2023</span> 年以前達成 <br> <span class="item-percent">100% 再生能源</span>`,
+            },
+            {
+                "img": require("./members/tsc.jpg"),
+                "title": "崇越科技股份有限公司",
+                "description": "提供半導體及光電產業整合服務，延伸擴及環保綠能與大健康事業，為節能減碳、永續發展提供環境對策與能源機制。",
+                "goal": `2024 年使用至 10% 、2025 年使用至 25% 、 2030 年使用至 50% 、 2040 年使用至 80% 、 2050 年使用至 100%`,
             }
         ]
     },
@@ -483,6 +511,48 @@ const members = [
                 "title": "台江生技股份有限公司",
                 "description": "",
                 "goal": `<span class="item-year">2030</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
+            }
+        ]
+    },
+    {
+        "index": 19,
+        "name": "環保",
+        "data": [
+            {
+                "img": require("./members/7-4.jpg"),
+                "title": "盈松環保股份有限公司",
+                "description": "盈松環保股份有限公司為生產木質包裝材(木棧板、木箱)之業者,自 2017 年起採購多套生質能氣化發電設備,計畫將廠內之木質廢棄物與下腳料投入產電,落實循環經濟,達到綠電自產自用之計畫。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            },
+            {
+                "img": require("./members/jyd.jpg"),
+                "title": "金益鼎企業股份有限公司",
+                "description": "從廢棄物回收到原物料生產，搭起循環經濟產業鏈的連結，達到環境與產業共生的目標。",
+                "goal": `<span class="item-year">2025</span> 年使用<br> <span class="item-percent">10% 綠電</span>`,
+            }
+        ]
+    },
+    {
+        "index": 20,
+        "name": "塑化",
+        "data": [
+            {
+                "img": require("./members/living.jpg"),
+                "title": "集泉塑膠工業股份有限公司",
+                "description": "1991年成立，生產各式清潔/食品/生技藥包材，豐富經驗的綠塑包材廠商、以SDGs為目標，可協助相關企業達成ESG。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
+            }
+        ]
+    },
+    {
+        "index": 21,
+        "name": "水泥",
+        "data": [
+            {
+                "img": require("./members/hwantai-cp.jpg"),
+                "title": "環台水泥製品股份有限公司",
+                "description": "公司成立自 1965 年，主要產品為基樁，實績含括全球指標性廠辦，亞洲重大公共建設及台灣再生能源電廠相關工程。",
+                "goal": `預計於 <span class="item-year">2025</span> 年使用 50% 綠電，逐年增加，於 2030 年達成 RE10x10 之承諾目標。`,
             }
         ]
     }
