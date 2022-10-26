@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://demo.events.pnetwork.com.tw/gp-re10x10/precache-manifest.7da07fef81d14ab4232802bb6b79685d.js"
+  "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/precache-manifest.91ce537dd373d17f4569741897d7d40c.js"
 );
 
 self.addEventListener('message', (event) => {
@@ -33,7 +33,7 @@ workbox.core.clientsClaim();
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("https://demo.events.pnetwork.com.tw/gp-re10x10/index.html"), {
+workbox.routing.registerNavigationRoute(workbox.precaching.getCacheKeyForURL("https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/index.html"), {
   
   blacklist: [/^\/_/,/\/[^/?]+\.[^/]+$/],
 });
