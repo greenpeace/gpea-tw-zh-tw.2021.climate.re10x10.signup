@@ -486,7 +486,7 @@ const members = [
                 "img": require("./members/chyiding.jpg"),
                 "title": "奇鼎科技股份有限公司",
                 "description": "2003年創立，為半導體製程環境溫濕度、潔淨度控制與AMC去除製造設備；提供節能規劃，已為客戶節省十億元電費。",
-                "goal": `<span class="item-year">2023</span> 年以前達成 <br> <span class="item-percent">100% 再生能源</span>`,
+                "goal": `<span class="item-year">2030</span> 年以前達成 <br> <span class="item-percent">100% 再生能源</span>`,
             },
             {
                 "img": require("./members/tsc.jpg"),
