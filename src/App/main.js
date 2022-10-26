@@ -45,44 +45,47 @@ function renderMemberList() {
   `;
   for (let i of memberList) {
     console.log(i.name);
-    btnHTML += `
-            <a class="square-btn btn __paragraph" href="#square-btn-tab-${
-      i.index
-    }" aria-controls="square-btn-tab-${
-      i.index
-    }" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
-        `;
+    if(i.data.length > 0){
+        btnHTML += `
+              <a class="square-btn btn __paragraph" href="#square-btn-tab-${
+        i.index
+      }" aria-controls="square-btn-tab-${
+        i.index
+      }" role="tab" data-toggle="tab" onclick="showSlider(this, ${i.index})">${i.name}</a>
+          `;
 
-    owlCarouselHTML += `<div role="tabpanel" class="tab-pane" id="square-btn-tab-${i.index}">
-        <!--div class="__navigation_left __navigation_left-${i.index}">
-            <h4><i class='fa fa-angle-left'></i></h4>
-        </div>
-        <div class="__navigation_right __navigation_right-${i.index}">
-            <h4><i class='fa fa-angle-right'></i></h4>
-        </div-->
-        <div class="owl-carousel owl-theme owl-our-members" id="owl-carousel-card-${
-          i.index
-        }">`;
-      for (let d of i.data) {
-        d.cate = i.name;
-        allMembers.push(d);
-        mobileOwlCarouselHTML += `
-            <div class="item">
-                <div class="owl-item-type">${i.name}</div>
-                <div class="owl-item-img">
-                    <img src="${d.img}" alt="">
-                </div>
-                <div class="owl-item-title">
-                    ${d.title}
-                </div>
-                <div class="owl-item-description">
-                    <p>${d.description}</p>
-                </div>
-                <div class="owl-item-footer">
-                ${d.goal}
-                </div>
-            </div>`;
-      }
+      owlCarouselHTML += `<div role="tabpanel" class="tab-pane" id="square-btn-tab-${i.index}">
+          <!--div class="__navigation_left __navigation_left-${i.index}">
+              <h4><i class='fa fa-angle-left'></i></h4>
+          </div>
+          <div class="__navigation_right __navigation_right-${i.index}">
+              <h4><i class='fa fa-angle-right'></i></h4>
+          </div-->
+          <div class="owl-carousel owl-theme owl-our-members" id="owl-carousel-card-${
+            i.index
+          }">`;
+        for (let d of i.data) {
+          d.cate = i.name;
+          allMembers.push(d);
+          mobileOwlCarouselHTML += `
+              <div class="item">
+                  <div class="owl-item-type">${i.name}</div>
+                  <div class="owl-item-img">
+                      <img src="${d.img}" alt="">
+                  </div>
+                  <div class="owl-item-title">
+                      ${d.title}
+                  </div>
+                  <div class="owl-item-description">
+                      <p>${d.description}</p>
+                  </div>
+                  <div class="owl-item-footer">
+                  ${d.goal}
+                  </div>
+              </div>`;
+        }
+    }
+    
     /*for (let d of i.data) {
       mobileOwlCarouselHTML += `
             <div class="item">
@@ -178,7 +181,7 @@ function renderMemberList() {
     ellipsisText: '⋯',
   }
   for(let i = 0; i < memberList.length+1; i++){
-    if(i < memberList.length){
+    if(i < memberList.length && memberList[i].data.length > 0){
       $('#pagination-' + i).pagination({
         dataSource: memberList[i].data,
         pageSize: pagiOptions.pageSize,
@@ -284,6 +287,10 @@ function renderMemberList() {
 
 $(document).ready(function () {
   console.log("ready!");
+  // set news number
+  $('.__news_no').each(function(index, item){
+    $(this).text('0' + (index+1));
+  });
   $("._show-bg").click(function () {
     $(".__show-bg").fadeIn();
     $(".__show-slider").hide();
