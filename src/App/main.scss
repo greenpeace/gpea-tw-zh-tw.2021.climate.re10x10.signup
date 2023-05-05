@@ -82,6 +82,9 @@ footer {
 }
 
 .architecture-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   .section-video{
     min-height: 580px;
     @media (max-width: 991px){

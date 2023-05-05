@@ -19,7 +19,7 @@ const members = [
                 "img": require("./members/planet.jpg"),
                 "title": "普萊德科技股份有限公司",
                 "description": "以國際專業網通設備品牌製造商為定位，堅持不斷創新數位網路傳輸技術和設備，普萊德自有品牌 PLANET 版圖已遍及全球上百國。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
         ]
     },
@@ -31,13 +31,13 @@ const members = [
                 "img": require("./members/2-1.jpeg"),
                 "title": "儒鴻企業股份有限公司",
                 "description": "科技紡織公司，專業彈性功能性針織布料製造廠和服裝製造廠商",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/2-2.jpg"),
                 "title": "鎰呈行股份有限公司",
                 "description": "成立於 1997 年，臺灣績優布料製造商及 Neoprene 橡膠發泡廠",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/tuntex.jpg"),
@@ -61,7 +61,7 @@ const members = [
             //     "img": require("./members/3-2.jpg"),
             //     "title": "L'OCCITANE 台灣歐舒丹股份有限公司",
             //     "description": "",
-            //     "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+            //     "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             // },
             {
                 "img": require("./members/3-3.jpg"),
@@ -79,7 +79,7 @@ const members = [
                 "img": require("./members/3-5.jpg"),
                 "title": "綠藤生物科技股份有限公司",
                 "description": "以「 讓一個更真實、更健康的永續生活型態發芽」為品牌使命，產品創新結合理念推廣，帶動正向的實質改變",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/3-6.jpg"),
@@ -97,31 +97,31 @@ const members = [
                 "img": require("./members/heineken.jpg"),
                 "title": "荷蘭商海尼根股份有限公司台灣分公司",
                 "description": "海尼根在台深耕超過 20年，現致力以消費者喜愛的品牌成為台灣第一名全球在地化的釀酒廠，追求永續、釀造更美好的世界。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/mattress.jpg"),
                 "title": "滿庭芳床業有限公司",
                 "description": "「滿庭芳床業」於1985年10月1日成立，致力於彈簧床墊的研發製作生產，集研發、客製、代工、批發、直營為一體，一步一腳印深耕台灣，堅持產業不外移，是在地有口皆碑的老品牌。，<br><br>在過去35年來，滿庭芳床業堅持真材實料、以誠相待、愛護土地與優質睡眠的四大信念，帶領所有職員以製造高品質床墊提供國人健康舒適的睡眠。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/jinmei.jpg"),
                 "title": "京麗國際股份有限公司",
                 "description": "京美產品以「在地」、「天然」、「無毒」的概念為出發，堅信只要擁有好的生活品質、創新的生活概念，便能引領國人更重視健康與機能。讓您「貼身更貼心」",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/11-1.jpg"),
                 "title": "富國數位媒體科技股份有限公司",
                 "description": "這次我們與地球站在一起。化身樹人；購買“ 低 / 零 / 負碳 ”標籤商品，即從排碳者轉化成減碳者；成為地球的守護者。",
-                "goal": ``,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/11-2.jpg"),
                 "title": "島語生活有限公司",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -133,7 +133,7 @@ const members = [
                 "img": require("./members/4-1.jpg"),
                 "title": "元大金融控股公司",
                 "description": "元大金控是台灣金融領導品牌之一，為一涵蓋證券、銀行、人壽、證金、期貨、投信、投顧、創投及資產管理等業務之金融集團。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -145,25 +145,25 @@ const members = [
                 "img": require("./members/5-2.jpg"),
                 "title": "伊雲谷數位科技股份有限公司",
                 "description": "雲端服務商，透過建立雲端生態係，提供企業數位化的解決方案進而協助透過雲端進行轉型",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/eyesmobii.jpg"),
                 "title": "艾斯移動股份有限公司",
                 "description": "艾斯移動公司 2022 年取得國家再生能源售電執照，提供購電、創能、儲能、節能、碳盤查一站式綠電服務。目標於2023年底前完全使用再生能源發電！<br>艾斯移動以「綠色旅運」、「Ai賦能」、「循環減碳」三大方向，提供企業一站式綠能與智能整合數位轉型解決方案，運營「 Mobii綠色生活平台」， 串連「政府-企業-用戶」資源，提供客戶「降成本、增效益、助永續」的全新ESG聚合行銷模式。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
     {
         "index": 5,
-        "name": "娛樂與媒體",
+        "name": "媒體",
         "data": [
             {
                 "img": require("./members/5-1.jpg"),
                 "title": "CATCHPLAY 台灣威亞數位科技股份有限公司",
                 "description": "臺灣知名數位影音平台，以打造真正由用戶角度出發的創新服務，凝聚數位影音生態圈。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -175,13 +175,13 @@ const members = [
                 "img": require("./members/6-1.jpg"),
                 "title": "Gokube 夠酷比股份有限公司",
                 "description": "共享電動車品牌，使電動車成為比傳統車與大眾交通工具更便利而且更經濟的選擇",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/6-2.jpg"),
                 "title": "ZEV 臻環科技股份有限公司",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -193,19 +193,19 @@ const members = [
                 "img": require("./members/7-1.jpg"),
                 "title": "創揚科技股份有限公司",
                 "description": "專業的鋰電池存儲系統及應用方案的供應商，為綠能產業盡一份心力，發展環保綠能永續經營",
-                "goal": `<span class="item-year"></span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/7-2.jpg"),
                 "title": "胤源企業有限公司",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/7-3.jpeg"),
                 "title": "穩譚科技股份有限公司",
                 "description": "致力研發全球首款植物滅火藥劑，不只能有效滅火保障安全同時也保護環境，實現綠色消防時代",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/white.jpg"),
@@ -263,7 +263,7 @@ const members = [
                 "img": require("./members/8-2.jpg"),
                 "title": "CSRone 頤德國際股份有限公司",
                 "description": "CSRone 是台灣第一家CSR永續溝通與互動平台， 深耕台灣多年，對於CSR相關業務範疇皆駕輕就熟。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/8-3.jpg"),
@@ -281,25 +281,25 @@ const members = [
                 "img": require("./members/8-5.jpg"),
                 "title": "若水鑑價股份有限公司",
                 "description": "EONE GLOBAL 成員之一，提供企業價值服務、企業評價與資產評價、新創事業輔導等服務",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/8-6.jpeg"),
                 "title": "龍邑工程顧問",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/8-7.jpg"),
                 "title": "技聯組工程顧問",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/8-8.jpg"),
                 "title": "鉅舵顧問有限公司",
                 "description": "以成為乘載人類未來的諾亞方舟為願景，提供永續發展、氣候變遷、能源轉型等各類議題之專業服務。",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/8-9.jpg"),
@@ -323,7 +323,7 @@ const members = [
                 "img": require("./members/9-1.jpg"),
                 "title": "恩瀛企業有限公司（台灣潛水）",
                 "description": "兩岸三地唯一擁有白金課程總監的五星職業發展中心，宗旨為「Bring Ocean Into Your Life」，藉由潛水，讓更多人愛上大海、一起保護大海",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
@@ -341,13 +341,13 @@ const members = [
                 "img": require("./members/9-5.jpg"),
                 "title": "嘉威聯合會計師事務所",
                 "description": "1986 年成立，提供臺灣數千家中小企業各式專業服務，期許與客戶以及B型企業一起用商業的力量改變社會",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/9-6.jpg"),
                 "title": "點亮咖啡",
                 "description": "直接貿易精品咖啡廳，全面使用直接貿易咖啡、公平貿易食材，邀請大家善用消費，改變世界",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/9-8.jpg"),
@@ -359,7 +359,7 @@ const members = [
                 "img": require("./members/white.jpg"),
                 "title": "正信不動產",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
         ]
     },
@@ -371,7 +371,7 @@ const members = [
                 "img": require("./members/9-2.jpg"),
                 "title": "臺北市動態藝術嘻哈文化業職業工會",
                 "description": "致力扶植動態藝術/街舞/嘻哈文化職業工作者，爭取就業權利及各類勞工福利保障",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
         ]
     },
@@ -383,7 +383,7 @@ const members = [
                 "img": require("./members/10-1.jpg"),
                 "title": "E-SENSE 逸盛科技股份有限公司",
                 "description": "逸盛科技長期關心環境議題，我們選用對環境較為友善的材質及符合環保要求的包裝材料",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
             {
                 "img": require("./members/10-2.jpg"),
@@ -408,7 +408,7 @@ const members = [
                 "img": require("./members/9-4.jpg"),
                 "title": "嘉瓦士有限公司",
                 "description": "小型獨立戶外品牌， 設計更好的戶外裝備，希望透過品牌的力量邀請大家共享戶外的美好",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             },
         ]
     },
@@ -420,7 +420,7 @@ const members = [
                 "img": require("./members/12-1.jpg"),
                 "title": "億暉實業股份有限公司",
                 "description": "",
-                "goal": `<span class="item-year">2025</span> 年使用 <br> <span class="item-percent">10% 綠電</span>`,
+                "goal": `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
             }
         ]
     },
