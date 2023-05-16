@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://change.greenpeace.org.tw/2021/petition-test/zh-tw.2021.climate.re10x10.signup/precache-manifest.595129a648a67f0006cea1fd3e1bc80d.js"
+  "https://change.greenpeace.org.tw/2021/petition-test/zh-tw.2021.climate.re10x10.signup/precache-manifest.1a32af15a670067be8eeddc61ed0ad4c.js"
 );
 
 self.addEventListener('message', (event) => {

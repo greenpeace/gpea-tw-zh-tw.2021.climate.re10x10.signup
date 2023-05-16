@@ -1,6 +1,6 @@
 const defaultGoals = {
     'y2025-10': `<span class="item-year">2025</span> 年至少使用 <br> <span class="item-percent">10% 綠電</span>`,
-}1
+}
 const setGoal = (year, goal, atLeast) => {
     return `<span class="item-year">${year}</span> 年${(atLeast)?"至少":""}使用 <br> <span class="item-percent">${goal} 綠電</span>`
 }
@@ -381,6 +381,12 @@ const members = [
                 "title": "護全禪心國際股份有限公司",
                 "description": "透過FSPN計畫，運用國際ISO標準去協助中小微企業完成簡易盤查與減排規劃，並透過學術認證進行碳權採購與抵銷。",
                 "goal": `<span class="item-year">2025</span> 年使用 10% 綠電，<span class="item-year">2050</span> 年使用 100% 綠電並輔導淨零聯盟夥伴會員 100% 使用綠電`,
+            },
+            {
+                "img": require("./members/simply.jpg"),
+                "title": "美好創意有限公司",
+                "description": "美好創意具備跨國商務顧問團隊，具備澳洲、美國、日本、台灣等國際品牌經營經驗。擅長品牌策劃、ESG企業永續規劃、國際品牌海內外營銷聯盟、大數據分析，提供企業各項績效評估，規劃設計內稽內控制度，國際化管理顧問服務，是企業最佳的永續合作夥伴。",
+                "goal": defaultGoals['y2025-10'],
             }
         ]
     },
@@ -442,6 +448,13 @@ const members = [
                 "title": "臺北市動態藝術嘻哈文化業職業工會",
                 "description": "致力扶植動態藝術/街舞/嘻哈文化職業工作者，爭取就業權利及各類勞工福利保障",
                 "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/valley.jpg"),
+                "title": "心之谷永續教育園區",
+                "description": "希望推動ESG永續精神於日常生活中，和全球的人們攜手打造綠意盎然的美好未來！",
+                "goal": `<span class="item-year">2022</span> 年1-12月已完成場館碳盤查並已自主碳中和。<span class="item-year">2023</span> 年將逐步進行能源管理及綠電導入，預計於 <span class="item-year">2025</span> 年達成RE10x10之承諾目標。
+                `,
             },
         ]
     },
@@ -543,7 +556,7 @@ const members = [
             {
                 "img": require("./members/mobii.jpg"),
                 "title": "莫比綠電股份有限公司",
-                "description": "艾斯移動公司 2022 年取得國家再生能源售電執照，提供購電、創能、儲能、節能、碳盤查一站式綠電服務。目標於2023年底前完全使用再生能源發電！<br>艾斯移動以「綠色旅運」、「Ai賦能」、「循環減碳」三大方向，提供企業一站式綠能與智能整合數位轉型解決方案，運營「 Mobii綠色生活平台」， 串連「政府-企業-用戶」資源，提供客戶「降成本、增效益、助永續」的全新ESG聚合行銷模式。",
+                "description": "莫比綠電是提供全方位ESG和可再生能源轉型解決方案的領先供應商，憑藉其創新的解決方案和完整的綠電服務，已成為業界信賴的夥伴。我們擁有台灣經濟部核發的再生能源售電業牌照。我們提供購售綠電、創能、充能、儲能、節能、碳盤查、碳權交易等服務，並提供綠色轉型、數位轉型、永續品牌三大類解決方案，協助客戶實現ESG轉型與永續發展目標。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
