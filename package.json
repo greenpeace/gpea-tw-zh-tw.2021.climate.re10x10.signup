@@ -22,7 +22,7 @@
     "build-demo": "PUBLIC_URL=https://change.greenpeace.org.tw/2021/petition-test/zh-tw.2021.climate.re10x10.signup react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn run build && node mc-deploy.js "
+    "deploy": "npm run build && node mc-deploy.js "
   },
   "eslintConfig": {
     "extends": "react-app"

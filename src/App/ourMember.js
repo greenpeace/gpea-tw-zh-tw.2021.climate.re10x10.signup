@@ -642,7 +642,7 @@ const members = [
                 "img": require("./members/amed.jpg"),
                 "title": "安美得生醫股份有限公司",
                 "description": "我們致力於傷口照護的核心技術研發、生產製造、通路行銷以及產品衛教服務，透過產銷分工、通路經營與專責服務，在各領域內專注專精，務實創新，創造效益。",
-                "goal": `<span class="item-year">2024</span> 年採購 5% 綠電並逐年增加，<br><span class="item-year">2050</span> 年達成 100% 綠電`,
+                "goal": `預計於 <span class="item-year">2024</span> 年採購 5% 綠電，<br><span class="item-year">2025</span> 年達成至少 10% 綠電`,
             }
         ]
     },
