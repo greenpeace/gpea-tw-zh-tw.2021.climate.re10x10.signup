@@ -44,6 +44,11 @@ const newsList = [
     "tag": "專訪",
     "title": "RE10x10 綠電倡議，幫助臺灣企業從「懂綠電」到「用綠電」",
     "url": "https://www.greenpeace.org/taiwan/update/25010/re10x10-%e7%b6%a0%e9%9b%bb%e5%80%a1%e8%ad%b0%ef%bc%8c%e5%b9%ab%e5%8a%a9%e8%87%ba%e7%81%a3%e4%bc%81%e6%a5%ad%e5%be%9e%e3%80%8c%e6%87%82%e7%b6%a0%e9%9b%bb%e3%80%8d%e5%88%b0%e3%80%8c%e7%94%a8%e7%b6%a0/?_gl=1*14ez4li*_gcl_au*MjEzODMwODA2Ny4xNjgzNTMwMzk3*_ga*MzE1MTI4OTYuMTY3NTY2ODc4Mw..*_ga_H0F0PQX947*MTY4ODM3MjU5My44My4xLjE2ODgzNzI2NDguNS4wLjA.&_ga=2.108294274.1816460612.1688366542-31512896.1675668783"
-  },
+  },{
+    "date": "Nov 8,2023",
+    "tag": "新聞稿",
+    "title": "政府小額綠電競標治標不治本，輔導企業自發自用才是最佳解方，RE10x10逾百臺企仍待綠電新政",
+    "url": "https://www.greenpeace.org/taiwan/press/38475/%e6%94%bf%e5%ba%9c%e5%b0%8f%e9%a1%8d%e7%b6%a0%e9%9b%bb%e7%ab%b6%e6%a8%99%e6%b2%bb%e6%a8%99%e4%b8%8d%e6%b2%bb%e6%9c%ac%ef%bc%8c%e8%bc%94%e5%b0%8e%e4%bc%81%e6%a5%ad%e8%87%aa%e7%99%bc%e8%87%aa%e7%94%a8/"
+  }
 ]
 module.exports = newsList;
