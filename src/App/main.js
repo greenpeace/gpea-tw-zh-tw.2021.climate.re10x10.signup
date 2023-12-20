@@ -15,6 +15,7 @@ window.directTo = function (url) {
 };
 
 const memberList = require("./ourMember");
+const newsList = require("./news");
 
 window.showSlider = function (evt, index) {
   // if($(evt).hasClass('active')){
@@ -285,6 +286,45 @@ function renderMemberList() {
   
 }
 
+function renderNewsList(){
+  let pagiOptions = {
+    pageSize: 10,
+    pageRange: 1,
+    prevText: '',
+    nextText: '',
+    ellipsisText: '⋯',
+  }
+
+  $('#newsList').pagination({
+    pageSize: pagiOptions.pageSize,
+    pageRange: pagiOptions.pageRange,
+    prevText: pagiOptions.prevText,
+    nextText: pagiOptions.nextText,
+    ellipsisText: pagiOptions.ellipsisText,
+    dataSource: newsList,
+    callback: function(data,pagination) {
+      console.log(data)
+      var html = newsItemTemp(data);
+      $('#newsList .news-list').html(html);
+    }
+  })
+  function newsItemTemp(data){
+    var htmlStr = "";
+    $.each(data, function(index, item){
+      htmlStr += `<!-- start news item -->
+      <li class="news-item">
+        <a class="news-link" href="${item.url}" target="_blank">
+          <span class="news-date">${item.date}</span>
+          <span class="news-tag">【${item.tag}】</span>
+          <span class="news-title">${item.title} ></span>
+        </a>
+      </li>
+      <!-- end news item -->`
+    });
+    return htmlStr
+  }
+}
+
 $(document).ready(function () {
   console.log("ready!");
   // set news number
@@ -334,6 +374,9 @@ $(document).ready(function () {
     }
 
   });
+
+  renderNewsList();
+
 });
 
 function createYearOptions() {
