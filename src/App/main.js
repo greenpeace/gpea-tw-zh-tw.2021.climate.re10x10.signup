@@ -463,6 +463,7 @@ const initForm = () => {
       userPhone: $("#userPhone").val(),
       userEmail: $("#userEmail").val(),
       userBirthYear: $("#userBirthYear").val(),
+      userOptin: $("#userOptin").prop("checked"),
     };
 
     Object.keys(data).forEach((key) => {
@@ -643,6 +644,7 @@ async function addEnterprise() {
     entContactPhone: $("#entContactPhone").val(),
     entContactPosition: $("#entContactPosition").val(),
     entKnowledge: $("#entKnowledge").val(),
+    "ent-optin": $("#ent-optin").prop("checked"),
   };
 
   Object.keys(data).forEach((key) => {

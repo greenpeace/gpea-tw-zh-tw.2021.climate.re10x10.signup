@@ -135,6 +135,12 @@ footer {
   .fake_input--checkbox {
     width: unset;
     left: 20px;
+    &.required-error:not(:checked) {
+      appearance: none;
+      width: 13px;
+      height: 13px;
+      outline: none;
+    }
   }
 }
 
