@@ -15,5 +15,5 @@
 - `npm run build-demo` 發佈測試站
 - `npm deploy` 發佈正式站
 
-## mome 
+## memo 
 - node.js v14

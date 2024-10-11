@@ -103,8 +103,8 @@ const members = [
             },
             {
                 "img": require("./members/3-4.jpg"),
-                "title": "美科實業股份有限公司",
-                "description": "臺灣頭皮髮品的領導品牌，經營艾瑪絲與覺亞兩大品牌，以天然成分照顧頭皮健康",
+                "title": "艾瑪絲、覺亞_美科實業股份有限公司",
+                "description": "臺灣頭皮髮品的領導品牌，經營AROMASE艾瑪絲、juliArt覺亞，推廣天然健康的頭皮保養，產品獲得歐盟認證，2023達成總部綠電50%，2024達成組織碳中和，朝向2030 Net Zero努力。持續創造對社會及環境的正面影響力，認為「如果我們不能為這個社會創造價值，那我們沒有存在的意義」，促進所有人的頭皮健康，成為對世界最好的企業。",
                 "goal": setGoal('2030','100%'),
                 //``<span class="item-year">2030</span> 年使用 <br> <span class="item-percent">100% 綠電</span>`,
             },
@@ -262,21 +262,15 @@ const members = [
         "name": "設計與製造",
         "data": [
             {
-                "img": require("./members/7-1.jpg"),
-                "title": "創揚科技股份有限公司",
-                "description": "專業的鋰電池存儲系統及應用方案的供應商，為綠能產業盡一份心力，發展環保綠能永續經營",
-                "goal": defaultGoals['y2025-10'],
-            },
-            {
                 "img": require("./members/7-2.jpg"),
                 "title": "胤源企業有限公司",
                 "description": "為從事運動器材製造，以豐富經驗為產品締造出良好的口碑，秉持合作的經營理念，努力開拓共同發展。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
-                "img": require("./members/7-3.jpeg"),
+                "img": require("./members/7-3.jpg"),
                 "title": "穩譚科技股份有限公司",
-                "description": "致力研發全球首款植物滅火藥劑，不只能有效滅火保障安全同時也保護環境，實現綠色消防時代",
+                "description": "致力研發全球首款通過毒性檢測的植物滅火藥劑，能有效滅火保障安全，幫助人員逃離火場，同時保護環境，實現ESG綠色消防時代。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
@@ -356,8 +350,8 @@ const members = [
             // },
             {
                 "img": require("./members/8-2.jpg"),
-                "title": "CSRone 頤德國際股份有限公司",
-                "description": "CSRone 是台灣第一家CSR永續溝通與互動平台， 深耕台灣多年，對於CSR相關業務範疇皆駕輕就熟。",
+                "title": "頤德國際(股)公司",
+                "description": "CSRone隸屬頤德國際事業群，是華文界最完備的永續資訊智庫與互動平台；協助企業與國際框架與政策接軌，熟捻各項環境與社會永續議題與解方，提供台灣與亞太企業和組織全方位永續發展服務。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
@@ -376,14 +370,14 @@ const members = [
             {
                 "img": require("./members/8-5.jpg"),
                 "title": "若水數位評價股份有限公司",
-                "description": "EONE GLOBAL 成員之一，提供企業價值服務、企業評價與資產評價、新創事業輔導等服務",
+                "description": "秉承「上善若水」之精神，為客戶提供企業評價與新創輔導等服務。<br>公司團隊由多名具有國際評價師證照（IACVS）之專業評價師組成，以客戶權益為出發點，期許與客戶達到價值共創。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
                 "img": require("./members/8-6.jpeg"),
                 "title": "龍邑工程顧問",
                 "description": "為提供國土規劃、都市計畫、土地開發及各類型空間發展相關議題之研究、評估、規劃、設計服務之專業技術顧問機構，服務對象涵蓋公、私部門，具有豐富的規劃實務經驗。",
-                "goal": defaultGoals['y2025-10'],
+                "goal": setGoal('2025','30%'),
             },
             {
                 "img": require("./members/8-7.jpg"),
@@ -463,6 +457,12 @@ const members = [
                 "title": "恩瀛企業有限公司（台灣潛水）",
                 "description": "兩岸三地唯一擁有白金課程總監的五星職業發展中心，宗旨為「Bring Ocean Into Your Life」，藉由潛水，讓更多人愛上大海、一起保護大海",
                 "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/9-4.jpg"),
+                "title": "嘉瓦士有限公司",
+                "description": "在地台灣戶外品牌，致力於設計更好的戶外服飾，訴求環保理念與登山生態教育的推廣。",
+                "goal": defaultGoals['y2025-10'],
             }
         ]
     },
@@ -541,7 +541,7 @@ const members = [
             {
                 "img": require("./members/ubiqconn.jpg"),
                 "title": "攸泰科技股份有限公司",
-                "description": "攸泰為強固型移動式物聯網解決方案之領導廠商，積極構建各產業的物聯網連結願景，且響應綠能與注重永續發展。",
+                "description": "攸泰科技為強固型移動解決方案領導廠商，專注於衛星通信、農業、物流、海事、交通與政府專案等重點產業。我們高度重視永續發展，積極提升綠能使用占比，並持續關注氣候變遷和減碳管理等重要議題。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
@@ -561,20 +561,9 @@ const members = [
             }
         ]
     },
+    
     {
         "index": 13,
-        "name": "百貨零售業",
-        "data": [
-            {
-                "img": require("./members/9-4.jpg"),
-                "title": "嘉瓦士有限公司",
-                "description": "小型獨立戶外品牌， 設計更好的戶外裝備，希望透過品牌的力量邀請大家共享戶外的美好",
-                "goal": defaultGoals['y2025-10'],
-            },
-        ]
-    },
-    {
-        "index": 14,
         "name": "出口貿易",
         "data": [
             {
@@ -582,18 +571,24 @@ const members = [
                 "title": "億暉實業股份有限公司",
                 "description": "成立於 1984 年，致力於設計和出口髮飾、家居裝飾、禮品、時尚珠寶、配件等。有近 100 名員工，五個獨立辦事處：台北、香港、東莞、義烏及越南。 每個辦事處緊密合作，確保客戶獲得高品質產品。",
                 "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/wh.jpg"),
+                "title": "華翰物產實業股份有限公司",
+                "description": "華翰物產在國際大宗商品貿易領域深耕逾30年，我們專注於能源（含生質能源）、鋼鐵、農產品、碳權等Commodity交易，在為客戶穩定能源需求的同時，也協助客戶低碳轉型與達成碳中和目標。",
+                "goal": defaultGoals['y2025-10'],
             }
         ]
     },
     {
-        "index": 15,
+        "index": 14,
         "name": "能源",
         "data": [
             {
                 "img": require("./members/13-1.jpg"),
                 "title": "亞福儲能股份有限公司",
-                "description": "建立一個被高度信賴的企業典範，發展安全、環保的新儲能技術，成為能源產業的最佳合作夥伴。",
-                "goal": `2023年5%, 2025年10%, 2050年100% 綠電`,
+                "description": "發展安全、環保的鋁電池技術，提供儲能/綠電/碳權整合服務，為企業發展ESG的最佳夥伴。",
+                "goal": `2025年10%, 2050年100% 綠電`,
             },
             {
                 "img": require("./members/13-2.jpg"),
@@ -648,11 +643,29 @@ const members = [
                 "title": "太平洋綠能股份有限公司",
                 "description": "「太平洋綠能創立於2018年，致力提供對環境友善、可信任的太陽能。短短五年已掛錶案場達45MW、規劃興建的案場達100MW」。",
                 "goal": setGoal('2025', '100%'),
+            },
+            {
+                "img": require("./members/7-1.jpg"),
+                "title": "創揚科技股份有限公司",
+                "description": "專業的鋰電池存儲系統及應用方案的供應商，為綠能產業盡一份心力，發展環保綠能永續經營",
+                "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/gigastorage.jpg"),
+                "title": "國碩科技工業股份有限公司",
+                "description": "國碩科技善盡國際社會責任理念，以「發、售一站式服務」目標，提供綠電用戶適切且彈性的供電方案，全力滿足客戶需求，使國碩科技成為綠色產業與綠色能源的優質方案商。",
+                "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/foxwell.jpg"),
+                "title": "富威電力",
+                "description": "富威電力( 6994 ) 隸屬於正崴集團旗下的森崴能源（6806），為台灣首批獲得民間售電執照的綠電交易平台，提供最專業的技術與資訊安全保障，確保平台上售購的每一度綠電皆擁有最高品質的信賴。富威電力更致力於發展節能ESCO、儲能等技術，提供全方位的再生能源服務。",
+                "goal": `<span class="item-year">2025</span> 年綠電使用比例 20%、<span class="item-year">2026</span> 年綠電使用比例 40%、<span class="item-year">2030</span> 年綠電使用比例 100%`,
             }
         ]
     },
     {
-        "index": 16,
+        "index": 15,
         "name": "建築",
         "data": [
             {
@@ -666,11 +679,17 @@ const members = [
                 "title": "鼎越開發股份有限公司",
                 "description": "鼎越積極發展符合環保、節能、低碳的綠色建築。重視每一個開發案的施工細節與品質，致力於打造自然宜居的頂級住宅、具高端智能科技的國際商務大樓，以立足台灣，放眼世界的宏觀，引領創造建築新地標。",
                 "goal": `<span class="item-year">2040</span> 達成 RE100 的目標`,
+            },
+            {
+                "img": require("./members/shancing.jpg"),
+                "title": "山青股份有限公司",
+                "description": "山青股份有限公司以創新、綠電、智慧及節能的光玻技術領跑業界，實踐「山青玻璃會呼吸，科技節能更永續」的企業永續使命。其產品適用於多個領域，包括光電、建築、室內設計及交通運輸，展現出廣泛的應用潛力。公司成立後即取得國際碳中和認證，並成為台灣首家獲得零碳認證的智慧玻璃設計公司。",
+                "goal": `<span class="item-year">2025</span> 年至少使用 10% 綠電<br><span class="item-year">2030</span> 年綠電 100%`,
             }
         ]
     },
     {
-        "index": 17,
+        "index": 16,
         "name": "半導體",
         "data": [
             {
@@ -682,19 +701,19 @@ const members = [
             {
                 "img": require("./members/chyiding.jpg"),
                 "title": "奇鼎科技股份有限公司",
-                "description": "2003年創立，為半導體製程環境溫濕度、潔淨度控制與AMC去除製造設備；提供節能規劃，已為客戶節省十億元電費。",
+                "description": "2003年創立，為半導體製程環境溫濕度、潔淨度控制與AMC去除製造設備；提供節能規劃，已為客戶節省十四億元電費。",
                 "goal": `<span class="item-year">2030</span> 年以前達成 <br> <span class="item-percent">100% 再生能源</span>`,
             },
             {
                 "img": require("./members/tsc.jpg"),
                 "title": "崇越科技股份有限公司",
                 "description": "提供半導體及光電產業整合服務，延伸擴及環保綠能與大健康事業，為節能減碳、永續發展提供環境對策與能源機制。",
-                "goal": `2024 年使用至 10% 、2025 年使用至 25% 、 2030 年使用至 50% 、 2040 年使用至 80% 、 2050 年使用至 100%`,
+                "goal": `2024 年使用至 10% 、2025 年使用至 25% 、 2030 年使用至 100%`,
             }
         ]
     },
     {
-        "index": 18,
+        "index": 17,
         "name": "生技",
         "data": [
             {
@@ -713,7 +732,7 @@ const members = [
             {
                 "img": require("./members/greencome.jpg"),
                 "title": "大醫生技股份有限公司",
-                "description": "大醫生技除了照顧消費者的健康，也在意環境健康。我們透過綠電採購及植樹造林，達成能源轉型及減碳目標。",
+                "description": "大醫生技成立於2011年，除了照顧消費者的健康，也在意環境健康。我們透過綠電採購及植樹造林，達成能源轉型及減碳目標，並於2024年取得B型企業認證。",
                 "goal": `<span class="item-year">2025</span> 年前使用 60% 綠電，並逐步增加採購量`,
             },
             {
@@ -737,13 +756,13 @@ const members = [
         ]
     },
     {
-        "index": 19,
+        "index": 18,
         "name": "環保",
         "data": [
             {
                 "img": require("./members/7-4.jpg"),
                 "title": "盈松環保股份有限公司",
-                "description": "盈松環保股份有限公司為生產木質包裝材(木棧板、木箱)之業者,自 2017 年起採購多套生質能氣化發電設備,計畫將廠內之木質廢棄物與下腳料投入產電,落實循環經濟,達到綠電自產自用之計畫。",
+                "description": "盈松環保股份有限公司為木質包裝材(木棧板、木箱)生產及廢木材清除、再利用機構。為我國唯一具備木材氣化發電技術之業者，自2023年起落實循環經濟,已達到綠電自發自用之目標，年產電力逾2百萬度。",
                 "goal": defaultGoals['y2025-10'],
             },
             {
@@ -761,7 +780,7 @@ const members = [
         ]
     },
     {
-        "index": 20,
+        "index": 19,
         "name": "塑化",
         "data": [
             {
@@ -773,7 +792,7 @@ const members = [
         ]
     },
     {
-        "index": 21,
+        "index": 20,
         "name": "水泥",
         "data": [
             {
@@ -785,7 +804,7 @@ const members = [
         ]
     },
     {
-        "index": 22,
+        "index": 21,
         "name": "農業",
         "data": [
             {
@@ -797,7 +816,7 @@ const members = [
         ]
     },
     {
-        "index": 23,
+        "index": 22,
         "name": "醫療",
         "data": [
             {
@@ -809,7 +828,7 @@ const members = [
         ]
     },
     {
-        "index": 24,
+        "index": 23,
         "name": "文創展演",
         "data": [
             {
@@ -822,14 +841,26 @@ const members = [
         ]
     },
     {
-        "index": 25,
+        "index": 24,
         "name": "觀光",
         "data": [
             {
                 "img": require("./members/yungshin.jpg"),
-                "title": "心之谷永續教育園區",
+                "title": "永信旅行社",
                 "description": "耕耘三十年的老品牌，於去年晉升為綜合旅行社，團隊更是來自一群年輕努力打拚過的專業旅人，打造一個創新旅遊平台。",
                 "goal": `<span class="item-year">2025</span> 年前達成 10 % 綠電使用。`,
+            },
+        ]
+    },
+    {
+        "index": 25,
+        "name": "餐飲",
+        "data": [
+            {
+                "img": require("./members/mumu.jpg"),
+                "title": "木釜自然健康嚴選",
+                "description": "在這台灣的這片土地上，成就由我們共同形成的一道綠色風景線，在享用美味餐盒的同時，也能兼顧地球的健康，只使用低碳排食材，並且廚房設備都是以電力為主，在品嚐美味的同時為保護環境出一份力，也成為一種生活方式的新象徵。",
+                "goal": `<span class="item-year">2025</span> 年使用10%綠電<br><span class="item-year">2050</span> 年使用100%綠電`,
             },
         ]
     }
