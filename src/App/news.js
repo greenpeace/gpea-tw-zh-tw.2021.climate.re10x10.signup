@@ -1,5 +1,10 @@
 const newsList = [
   {
+    "date": "Jan 24,2024",
+    "tag": "新聞稿",
+    "title": "百家企業響應綠色和平RE10X10綠電倡議 臺灣綠電價格高！企業擴展自發自用新模式",
+    "url": "https://www.greenpeace.org/taiwan/press/39406/%E7%99%BE%E5%AE%B6%E4%BC%81%E6%A5%AD%E9%9F%BF%E6%87%89%E7%B6%A0%E8%89%B2%E5%92%8C%E5%B9%B3re10x10%E7%B6%A0%E9%9B%BB%E5%80%A1%E8%AD%B0-%E8%87%BA%E7%81%A3%E7%B6%A0%E9%9B%BB%E5%83%B9%E6%A0%BC%E9%AB%98/"
+  },{
     "date": "Mar 30,2023",
     "tag": "報告",
     "title": "2022年 RE10x10 成果報告發布",

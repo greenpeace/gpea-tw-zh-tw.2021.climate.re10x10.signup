@@ -2,6 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const os = require('os');
 const FTPS = require('ftps');
+require('dotenv').config();
 
 /**
  * This file is a temporary script to replace gpea-npm-en-uploader
@@ -38,7 +39,9 @@ let buildFolder = path.join(__dirname, "build")
 	DonationPageUrl = "https://www.greenpeace.org/eastasia/", // not used now
 	interests = ["Climate"], // Arctic, Climate, Forest, Health, Oceans, Plastics
 	ftpConfigName = "ftp_tw", // refer to ~/.npm-en-uploader-secret
-	ftpRemoteDir = "/htdocs/2021/petition/zh-tw.2021.climate.re10x10.signup"
+	// ftpRemoteDir = "/htdocs/2021/petition/zh-tw.2021.climate.re10x10.signup"
+	// console.log('remote dir:', process.env.PUBLIC_URL)
+	ftpRemoteDir = process.env.REMOTE_DIR
 
 let indexHtmlFilePath = path.join(buildFolder, "index.html")
 let fbuf = fs.readFileSync(indexHtmlFilePath)

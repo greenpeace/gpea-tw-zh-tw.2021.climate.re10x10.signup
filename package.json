@@ -11,6 +11,8 @@
     "progressbar.js": "^1.1.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.7",
     "node-sass": "^4.13.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -22,7 +24,8 @@
     "build-demo": "PUBLIC_URL=https://change.greenpeace.org.tw/2021/petition-test/zh-tw.2021.climate.re10x10.signup react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && node mc-deploy.js "
+    "deploy": "npm run build && node mc-deploy.js",
+    "deploy-demo": "npm run build-demo && REMOTE_DIR=/htdocs/2021/petition-test/zh-tw.2021.climate.re10x10.signup node mc-deploy.js"
   },
   "eslintConfig": {
     "extends": "react-app"
