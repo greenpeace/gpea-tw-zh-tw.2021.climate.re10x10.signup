@@ -1,5 +1,10 @@
 const newsList = [
   {
+    "date": "Feb 21,2025",
+    "tag": "新聞稿",
+    "title": "綠色和平推動臺灣中小企業綠電佔比近24%  更勝半導體產業",
+    "url": "https://www.greenpeace.org/taiwan/video/43688/%e8%87%ba%e7%81%a3%e4%b8%ad%e5%b0%8f%e4%bc%81%e6%a5%ad%e7%b6%a0%e9%9b%bb%e6%8e%a1%e7%94%a8%e6%af%94%e4%be%8b%e6%9b%b4%e5%8b%9d%e5%8f%b0%e7%a9%8d%e9%9b%bb-re10x10%e5%80%a1%e8%ad%b0%e6%88%90%e5%8a%9f/"
+  },{
     "date": "Jan 24,2024",
     "tag": "新聞稿",
     "title": "百家企業響應綠色和平RE10X10綠電倡議 臺灣綠電價格高！企業擴展自發自用新模式",
