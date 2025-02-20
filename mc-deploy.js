@@ -41,7 +41,7 @@ let buildFolder = path.join(__dirname, "build")
 	ftpConfigName = "ftp_tw", // refer to ~/.npm-en-uploader-secret
 	// ftpRemoteDir = "/htdocs/2021/petition/zh-tw.2021.climate.re10x10.signup"
 	// console.log('remote dir:', process.env.PUBLIC_URL)
-	ftpRemoteDir = process.env.REMOTE_DIR
+	ftpRemoteDir = process.env.REMOTE_DIR || "/htdocs/2021/petition/zh-tw.2021.climate.re10x10.signup";
 
 let indexHtmlFilePath = path.join(buildFolder, "index.html")
 let fbuf = fs.readFileSync(indexHtmlFilePath)
