@@ -328,7 +328,7 @@ const members = [
                 "img": require("./members/evergood.jpg"),
                 "title": "永佳環球有限公司",
                 "description": "成立於2003年，為台灣第一家獲得COSMOS有機驗證的化粧品專業研發製造的公司，致力於維護生物多樣性與環境永續性。",
-                "goal": `<span class="item-year">2021</span> 綠電佔比 54% ，<br>並於 <span class="item-year">2025</span> 年達成 70% 綠電`,
+                "goal": `<span class="item-year">2021</span> 年綠電佔比 54% ，<br>並於 <span class="item-year">2025</span> 年達成 70% 綠電`,
             },
             {
                 "img": require("./members/kingsteel.jpg"),
@@ -352,13 +352,13 @@ const members = [
                 "img": require("./members/proril.jpg"),
                 "title": "芳晟機電股份有限公司",
                 "description": "PRORIL成立於1979年，為全球知名的中小型工程泵浦製造商，以工程泵浦領域的海外市場為主。我們以「從PRORIL開始，讓世界的進步，不再被水阻擋」為願景目標，期許透過企業的進步價值與理念，打造一個最具客戶信賴的品牌！",
-                "goal": `<span class="item-year">2025</span> 使用 10% 綠電 <br>於2025年12月31日前<br>於辦公大樓屋頂建置太陽能系統自發自用。`
+                "goal": `<span class="item-year">2025</span> 年使用 10% 綠電 <br>於2025年12月31日前<br>於辦公大樓屋頂建置太陽能系統自發自用。`
             },
             {
                 "img": require("./members/bottlemate.jpg"),
                 "title": "金梅堂國際股份有限公司",
                 "description": "金梅堂國際股份有限公司，專注於保養品與化妝品的代工服務，並在塑膠製品的製造及包裝充填領域擁有多年專業經驗。",
-                "goal": `<span class="item-year">2025</span> 使用 10% 綠電， <br>並由憑證轉為自發自用。`
+                "goal": `<span class="item-year">2025</span> 年使用 10% 綠電， <br>並由憑證轉為自發自用。`
             },
         ]
     },
