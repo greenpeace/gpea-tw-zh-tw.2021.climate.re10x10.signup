@@ -679,13 +679,14 @@ const members = [
                 "title": "國碩科技工業股份有限公司",
                 "description": "國碩科技善盡國際社會責任理念，以「發、售一站式服務」目標，提供綠電用戶適切且彈性的供電方案，全力滿足客戶需求，使國碩科技成為綠色產業與綠色能源的優質方案商。",
                 "goal": defaultGoals['y2025-10'],
-            },
-            {
-                "img": require("./members/foxwell.jpg"),
-                "title": "富威電力",
-                "description": "富威電力( 6994 ) 隸屬於正崴集團旗下的森崴能源（6806），為台灣首批獲得民間售電執照的綠電交易平台，提供最專業的技術與資訊安全保障，確保平台上售購的每一度綠電皆擁有最高品質的信賴。富威電力更致力於發展節能ESCO、儲能等技術，提供全方位的再生能源服務。",
-                "goal": `<span class="item-year">2025</span> 年綠電使用比例 20%、<span class="item-year">2026</span> 年綠電使用比例 40%、<span class="item-year">2030</span> 年綠電使用比例 100%`,
             }
+            //,
+            // {
+            //     "img": require("./members/foxwell.jpg"),
+            //     "title": "富威電力",
+            //     "description": "富威電力( 6994 ) 隸屬於正崴集團旗下的森崴能源（6806），為台灣首批獲得民間售電執照的綠電交易平台，提供最專業的技術與資訊安全保障，確保平台上售購的每一度綠電皆擁有最高品質的信賴。富威電力更致力於發展節能ESCO、儲能等技術，提供全方位的再生能源服務。",
+            //     "goal": `<span class="item-year">2025</span> 年綠電使用比例 20%、<span class="item-year">2026</span> 年綠電使用比例 40%、<span class="item-year">2030</span> 年綠電使用比例 100%`,
+            // }
         ]
     },
     {

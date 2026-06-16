@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b72b911b199ae679932642045d22b031",
+    "revision": "a536647aaa23b4615e8d80c7b0152bd4",
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/index.html"
   },
   {
-    "revision": "181abd6a5ee84b707eaf",
+    "revision": "d4dc2a941db907b24c3e",
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/css/main.398bd615.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/2.634eae0b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "181abd6a5ee84b707eaf",
-    "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.8ad3e64b.chunk.js"
+    "revision": "d4dc2a941db907b24c3e",
+    "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/js/main.603ca686.chunk.js"
   },
   {
     "revision": "49c220662fba4b4a77cd",
@@ -274,10 +274,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c9ddd6a5c23da9aab4bdb0837f5ebd78",
     "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/media/formosa.c9ddd6a5.jpg"
-  },
-  {
-    "revision": "190149ff3e2ad295ca4204065d08cff7",
-    "url": "https://change.greenpeace.org.tw/2021/petition/zh-tw.2021.climate.re10x10.signup/static/media/foxwell.190149ff.jpg"
   },
   {
     "revision": "8e152996b794155867dba842e3068220",
