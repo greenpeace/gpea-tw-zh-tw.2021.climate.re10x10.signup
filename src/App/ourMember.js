@@ -536,6 +536,12 @@ const members = [
                 "title": "臺北市動態藝術嘻哈文化業職業工會",
                 "description": "致力扶植動態藝術/街舞/嘻哈文化職業工作者，爭取就業權利及各類勞工福利保障",
                 "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/wude.jpg"),
+                "title": "北港武德宮",
+                "description": "北港武德宮是臺灣財神信仰的發源地，名列十大廟宇。<br>以淨零碳排為願景，透過減量措施與綠電購買等方式，達成減碳目標，致力將台灣傳統文化邁向永續轉型。",
+                "goal": setGoal('2025', '100%'),
             }
         ]
     },
@@ -679,6 +685,18 @@ const members = [
                 "title": "國碩科技工業股份有限公司",
                 "description": "國碩科技善盡國際社會責任理念，以「發、售一站式服務」目標，提供綠電用戶適切且彈性的供電方案，全力滿足客戶需求，使國碩科技成為綠色產業與綠色能源的優質方案商。",
                 "goal": defaultGoals['y2025-10'],
+            },
+            {
+                "img": require("./members/shining-energy.jpg"),
+                "title": "鑫盈能源股份有限公司",
+                "description": "鑫盈能源據點遍布全台，專業太陽能發電與儲能整合，提供電廠開發、設計、建置、維運服務，加速企業達成減碳目標。",
+                "goal": setGoal('2050','100%'),
+            },
+            {
+                "img": require("./members/apollo.jpg"),
+                "title": "阿波羅電力股份有限公司",
+                "description": "再生能源售電業的領導者，以「綠電引領，台灣淨零」為使命，為台灣企業提供智慧且全方位的能源解決方案。",
+                "goal": `<span class="item-year">2025</span> 年使用 10% 綠電 <br> <span class="item-year">2050</span> 年使用 100% 綠電`,
             }
             //,
             // {
